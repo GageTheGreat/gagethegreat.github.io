@@ -1,0 +1,23 @@
+.center-object {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 290px;
+}
+#clan-invite-button1 {
+  border: 20px;
+  background-color: brown;
+  padding: 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.2s;
+}
+#clan-invite-button1:hover {
+  color: black;
+  background-color: red;
+}
+#clan-invite-text-style {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+}
