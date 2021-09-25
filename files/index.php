@@ -1,7 +1,7 @@
 
 <?php
-echo "Here are our files";
-$path = ".";
+echo "Files";
+$path = "../files";
 $dh = opendir($path);
 $i=1;
 while (($file = readdir($dh)) !== false) {
