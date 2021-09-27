@@ -1,0 +1,38 @@
+body{
+    background: rgb(85, 85, 85);
+}
+* {
+    margin: 4px;
+    border-radius: 8px;
+}
+#youtube-block {
+    padding: 50px;
+    background-image: url(youtube-icon.jpg);
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    border-radius: 8px;
+}
+#github-block{
+    padding: 50px;
+    background-image: url(github.png);
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    border-radius: 8px;
+}
+#header-top-home{
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+#h2-web-title {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
