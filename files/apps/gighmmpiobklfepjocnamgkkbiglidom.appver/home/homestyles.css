@@ -36,3 +36,19 @@ body{
     position: relative;
     top: 200px;
 }
+/*#newtabbutton{
+    display: inline-block;
+    padding: 30px;
+    background-color: rgb(43, 43, 43);
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#gmail-block {
+display: inline-block;
+padding: 30px;
+background-color: rgb(43, 43, 43);
+text-decoration: none;
+font-size: 30px;
+font-family: 'Courier New', Courier, monospace;
+}*/
