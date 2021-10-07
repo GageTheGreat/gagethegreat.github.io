@@ -43,8 +43,11 @@ body {
   border-color: brown;
   border-style: solid;
   border-width: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
 }
 #button-files-secret-1:hover {
   background-color: white;
   color: black;
+  cursor: pointer;
 }
