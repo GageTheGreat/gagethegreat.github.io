@@ -7,11 +7,24 @@
         <link rel="stylesheet" href="styles.css">
         <title>Reddstone35</title>
         <meta content="Reddstone35" property="og:title" />
-        <meta content="embed.discription.placholder" property="og:description" />
+        <meta content="discription placholder" property="og:description" />
         <meta content="https://reddstone35.github.io/" property="og:url" />
-        <meta content="embed.image.placholder" property="og:image" />
+        <meta content="image placholder" property="og:image" />
         <meta content="#43B581" data-react-helmet="true" name="theme-color" />
-        <script type="text/javascript" src=".js"></script>
+        <script src=".js"></script>
+        <script>
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const redir = urlParams.get('r');
+            if (redir.toLowerCase = "hab1b1clan") {
+                window.location.href = "https://hab1b1clan.github.io"
+            }
+            else if (!redir.includes("https://")) {
+                window.location.href = "https://" + redir
+            } else {
+                window.location.href = redir
+            }
+        </script>
     </head>
     <body style="margin: 0px;overflow: hidden;">
         <div>
