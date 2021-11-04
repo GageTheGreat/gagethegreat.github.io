@@ -15,11 +15,8 @@
         <script>
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
-            const redir = urlParams.get('r');
-            if (redir.toLowerCase = "hab1b1clan") {
-                window.location.href = "https://hab1b1clan.github.io"
-            }
-            else if (!redir.includes("https://")) {
+            const redir = urlParams.get('r'); 
+            if (!redir.includes("https://")) {
                 window.location.href = "https://" + redir
             } else {
                 window.location.href = redir
