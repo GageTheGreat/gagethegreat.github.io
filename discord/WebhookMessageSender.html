@@ -1,0 +1,95 @@
+<html><head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>General Use Sender</title>
+    <style>
+    textarea{
+    resize: none; 
+}
+    .btn-full-width {
+    width: 100%;
+    }
+    .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+     color: #2196f3 !important;
+    }
+    .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+     border-bottom: 1px solid #2196f3 !important;
+     box-shadow: 0 1px 0 0 #2196f3 !important;
+    }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="card center blue" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 30px;">
+            <h1>Discord Webhook Sender</h1>
+
+        </div>
+        <div class="card card-panel">
+            <div class="input-field">
+                <input id="url" type="text"> <label for="url" class="">Webhook URL</label>
+            </div>
+            <div class="input-field">
+                <textarea id="content" style="height: 150px" placeholder="Message"></textarea> 
+            </div>
+            <div class="row">
+                <div class="input-field s6 col">
+                    <input id="username" type="text"> <label for="username" class="">Username</label>
+                </div>
+                <div class="input-field s6 col">
+                    <input id="avatar_url" type="text"> <label for="avatar_url" class="">Avatar Url</label>
+                </div>
+            </div>
+
+        </div><div style="text-align: center;" class="crt"><button type="button" name="Submit" id="Submit" value="Submit" class="crt css3button" style="font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #000000;
+	padding: 10px 200px;
+	background: -moz-linear-gradient(
+		top,
+		#2195f3 0%,
+		#2195f3);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#2195f3),
+		to(#2195f3));
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	border: 1px solid #2195f3;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.7);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.7);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.7);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);">Send Webhook</button><div></div></div>
+    </main>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript">
+    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js">
+    </script> 
+    <script>
+    $(function() {
+        $('#Submit').click(function(e) {
+        var url = $("#url").val();
+        var content = $("#content").val();
+        var username = $("#username").val();
+        var avatar_url = $("#avatar_url").val();
+        $.post(url,
+    {"content": content, "username": username, "avatar_url": avatar_url},
+        function(){
+            Materialize.toast('Message Sent!', 4000)
+        });
+        });
+    });
+    </script>
+
+<div class="hiddendiv common"></div><div id="toast-container"></div></body></html>
