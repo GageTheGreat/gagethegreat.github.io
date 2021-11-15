@@ -76,3 +76,24 @@ a:hover {
   font-family: "Courier New", Courier, monospace;
   font-size: 18px;
 }
+
+.button-discord-index-grid {
+  border: 20px;
+  background-color: brown;
+  padding: 7px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.15s;
+  position: relative;
+  top: 0px;
+  left: 0%;
+  margin-top: 8px;
+  border-color: brown;
+  border-style: solid;
+  border-width: 3px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  position: sticky;
+  transform: translateY(1%);
+}
