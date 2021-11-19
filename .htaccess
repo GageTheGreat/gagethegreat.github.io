@@ -1,1 +1,7 @@
 DirectorySlash Off
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1/index\.html -f [NC]
+RewriteRule ^(.+?)/?$ /$1/index.html [L]
