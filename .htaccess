@@ -11,5 +11,5 @@ RewriteCond %{DOCUMENT_ROOT}/$1/index\.html -f [NC]
 RewriteRule ^(.+?)/?$ /$1/index.htm [L]
 
 ErrorDocument 403 /Error/403.html 
-ErrorDocument 404 /Error/404.html
+ErrorDocument 404 /404.html
 ErrorDocument 500 /Error/500.html
