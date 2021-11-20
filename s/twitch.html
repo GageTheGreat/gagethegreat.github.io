@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddstone35's Twitch</title>
+    <link rel="shortcut icon" href="/favicon.ico?">
+    <link rel="stylesheet" href="socialstyles.css">
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const channelredir = urlParams.get('channelredir');
+      const subconfirmation = urlParams.get('subconfirmation'); 
+      if (channelredir == "1") {
+        window.location.href = "https://twitch.tv/"
+      } else {
+        var r = 0
+      }
+    </script>
+  </head>
+  <body>
+    <h1 style="text-align: center;">link will be avalible soon</h1>
+    <div style="text-align: center;">
+      <a style="font-size: 40px;color: black;" href="#no">twitch.tv/*</a>
+    </div>
+    <input type="button" class="mainchannelviewbutton-twitch" onclick="this.value='Coming Soon'" value="View Channel"></input>
+    <!-- <a class="mainchannelviewbutton-twitch" href="#twitch">View Channel</a> -->
+  </body>
+</html>

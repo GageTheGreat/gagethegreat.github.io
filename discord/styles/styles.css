@@ -37,9 +37,9 @@ body {
   transform: translateX(-60%);
 }
 .button-index-invites-main-1 {
+  background-color: white;
   position: absolute;
   border: 60px;
-  background-image: brown;
   padding: 20px;
   border-radius: 3px;
   text-decoration: none;
@@ -62,9 +62,9 @@ body {
   left: 29%;
 }
 .button-index-invites-main-2 {
+  background-color: white;
   position: absolute;
   border: 60px;
-  background-image: brown;
   padding: 20px;
   border-radius: 3px;
   text-decoration: none;
