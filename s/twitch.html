@@ -11,7 +11,6 @@
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       const channelredir = urlParams.get('channelredir');
-      const subconfirmation = urlParams.get('subconfirmation'); 
       if (channelredir == "1") {
         window.location.href = "https://twitch.tv/"
       } else {
