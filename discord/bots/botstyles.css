@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Patrick+Hand&family=Rajdhani&display=swap");
+
+.links {
+  padding: 15px 80px;
+  background-color: purple;
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  border-radius: 40px;
+  position: relative;
+  top: 200px;
+  transition-duration: 0.15s;
+  margin: 20px;
+}
+.links:hover {
+  background-color: blueviolet;
+}
