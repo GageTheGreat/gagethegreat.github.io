@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Patrick+Hand&family=Rajdhani&display=swap");
+
+* {
+  font-family: Rajdhani;
+  text-align: center;
+}
+
+.store-item-b {
+  padding: 15px 80px;
+  background-color: purple;
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  border-radius: 40px;
+  position: relative;
+  top: 200px;
+  transition-duration: 0.15s;
+  margin: 20px;
+  margin-top: 50px;
+}
+.store-item-b:hover {
+  background-color: blueviolet;
+}
+.ty-mainthankstext {
+  font-size: 44px;
+  font-family: Rajdhani;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ty-returntostore {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
