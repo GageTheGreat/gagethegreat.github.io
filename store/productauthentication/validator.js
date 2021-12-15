@@ -5,6 +5,8 @@ const generalitem = urlParams.get('mp');
 
 var productpath = "https://reddstone35.com/files/download/programs/" + product;
 
+var validmps = ["Money System"]
+
 var request;
 if(window.XMLHttpRequest)
     request = new XMLHttpRequest();
@@ -18,11 +20,15 @@ if (request.status === 404) {
   window.close()
   throw new Error("Product not found")
 }
+if (!validmps.includes(generalitem)) {
+  history.back()
+  window.close()
+  throw new Error("Product not found")
+}
 
 
-document.write("Thank you for downloading " + generalitem);
+document.write("<span class=\"ty-mainthankstext\">Thank you for downloading " + generalitem + "</span>");
 
+document.write("<a href=\"javascript:history.back()\" class=\"ty-returntostore\">Return To Store</a>");
 
 window.location.href = productpath;
-
-

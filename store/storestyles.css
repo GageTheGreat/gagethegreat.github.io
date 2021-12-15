@@ -5,6 +5,9 @@
   text-align: center;
 }
 
+body {
+  margin: 0px;
+}
 .store-item-b {
   padding: 15px 80px;
   background-color: purple;
@@ -35,4 +38,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 24px;
+}
+.moneysystem-changelog-title {
+  padding: 10px 0px;
+  background-color: rgb(230, 230, 230);
+}
+.moneysystem-changelog-main {
+  font-size: 20px;
 }
