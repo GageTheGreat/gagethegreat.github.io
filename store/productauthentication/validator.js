@@ -13,17 +13,16 @@ if(window.XMLHttpRequest)
 else
     request = new ActiveXObject("Microsoft.XMLHTTP");
 request.open('GET', productpath, false);
-request.send(); // there will be a 'pause' here until the response to come.
-// the object request will be actually modified
+request.send();
 if (request.status === 404) {
-  history.back()
-  window.close()
-  throw new Error("Product not found")
+  history.back();
+  window.close();
+  throw new Error("Product not found");
 }
 if (!validmps.includes(generalitem)) {
-  history.back()
-  window.close()
-  throw new Error("Product not found")
+  history.back();
+  window.close();
+  throw new Error("Product not found");
 }
 
 
