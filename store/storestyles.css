@@ -46,3 +46,10 @@ body {
 .moneysystem-changelog-main {
   font-size: 20px;
 }
+.moneysystem-changelog-button {
+  font-size: 21px;
+  position: relative;
+  top: 70px;
+  text-decoration: none;
+  color: rgb(10, 10, 145);
+}
