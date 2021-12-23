@@ -26,6 +26,8 @@ body {
 }
 .ty-mainthankstext {
   font-size: 44px;
+
+  width: 100%;
   font-family: Rajdhani;
   position: absolute;
   top: 40%;

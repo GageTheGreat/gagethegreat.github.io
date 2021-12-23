@@ -2,10 +2,14 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const product = urlParams.get('product'); 
 const generalitem = urlParams.get('mp'); 
+const productversion = urlParams.get('pv');
+const tytext = urlParams.get('ty_t');
 
-var productpath = "https://reddstone35.com/files/download/programs/" + product;
+var productpath = `https://reddstone35.com/files/download/programs/${generalitem}/${product}`
 
-var validmps = ["Money System"]
+var validmps = ["MoneySystem"]
+var validty_t = ["Money System"]
+var invalidpvchars = ['/','<','>','$','^','&','%','@','!']
 
 var request;
 if(window.XMLHttpRequest)
@@ -19,14 +23,22 @@ if (request.status === 404) {
   window.close();
   throw new Error("Product not found");
 }
-if (!validmps.includes(generalitem)) {
+if (!validmps.includes(generalitem) || !validty_t.includes(tytext)) {
   history.back();
   window.close();
   throw new Error("Product not found");
 }
+for (var i = 0; i < productversion.length; i++) {
+  productverchar = productversion[i];
+  if(invalidpvchars.includes(productverchar)){
+    history.back();
+    window.close();
+    throw new Error("Invalid char in productversion");
+  }
+}
 
 
-document.write("<span class=\"ty-mainthankstext\">Thank you for downloading " + generalitem + "</span>");
+document.write(`<p class=\"ty-mainthankstext\">Thank you for downloading ${tytext} ${productversion} </p>`);
 
 document.write("<a href=\"javascript:history.back()\" class=\"ty-returntostore\">Return To Store</a>");
 
