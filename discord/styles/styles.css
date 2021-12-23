@@ -27,14 +27,14 @@ body {
 .join-text-invites-1 {
   position: absolute;
   left: 30%;
-  top: 30%;
-  transform: translateX(-60%);
+  top: 50%;
+  transform: translate(-50%, -250%);
 }
 .join-text-invites-2 {
   position: absolute;
   left: 70%;
-  top: 30%;
-  transform: translateX(-60%);
+  top: 50%;
+  transform: translate(-50%, -250%);
 }
 .button-index-invites-main-1 {
   background-color: white;
