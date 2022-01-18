@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="ajbotstyle.css">
     <title>Alex Janvier Bot</title>
   </head>
-  <body>
-    <header>
-      <nav>
+  <body style="animation: fade-to-white-troll 3s forward;">
+    <header class="header">
+      <nav class="nav">
         <div>
           <div>
-            <ul>
-              <li><a href="terms">Terms of Service</a></li>
-            </ul>
+              <a class="links" id="link1" href="terms">Terms of Service</a>
+              <input type="button" id="link2" onclick="trollispressed(this)" class="links troll-button" href="discord.gg/ThisIsALink" value="Join Our Server"></input>
           </div>
         </div>
       </nav>
     </header>
-    <h1>Alex Javier School Discord Bot</h1>
-    <h2>about</h2>
-    <p>
-      I'm too lazy to make the about page maybe tomorrow.
-    </p>
-    <footer>
+    <section class="about">
+      <h1>Alex Javier School Discord Bot</h1>
+      <h2>about</h2>
+      <div class="discord-about-main-text">
+      </div>
+      <p id="lazytext">
+        I'm too lazy to make the about page maybe tomorrow.
+      </p>
+    </section>
+    <footer class="home-footer">
       <p>If you are experiencing issues with the <span title="Alex Janvier discord server bot">bot</span> contact Reddstone35#9851 on discord</p>
     </footer>
   </body>
