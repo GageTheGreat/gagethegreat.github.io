@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body style="overflow: hidden;">
+    <div id="everything-container" class="middle giverole-all-aj-login">
+      <!-- <button id="login" onclick="window.location.href = 'https://discord.com/api/oauth2/authorize?client_id=934887961651183696&redirect_uri=http%3A%2F%2F127.0.0.1%3A5500%2FAJBot%2Flogin%2Fgiverole.html&response_type=code&scope=identify'">connect discord</button> -->
+      <form action="discordverification/" name="selectteach">
+        <select name="whoareyou" id="whoareyou" class="whoareyou-selector-aj-login" onchange="validateTeacher()">
+          <option value="null">Select who you are</option>
+          <option value="Ms. Steeves">Ms. Steeves</option>
+          <option value="notonlist">Not on the list?</option><br><br>
+          <input class="submit-b-aj-login-disabled" style="top: 0;left:30px" value="Continue" id="teacher-select-submit" type="submit" disabled>
+        </select>
+      </form>
+    </div>
+  </body>
+  <script src="scripts/verify.js"></script>
+  <script src="scripts/giverole.js"></script>
+</html>

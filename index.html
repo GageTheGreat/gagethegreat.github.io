@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="shortcut icon" href="/favicon.ico?">
-        <title>Reddstone35</title>
-        <meta content="Reddstone35" property="og:title" />
-        <meta content="discription placholder" property="og:description" />
-        <meta content="https://reddstone35.github.io/" property="og:url" />
-        <meta content="image placholder" property="og:image" />
-        <meta content="#43B581" data-react-helmet="true" name="theme-color" />
-        <script src=".js"></script>
-        <script>
-            const queryString = window.location.search;
-            const urlParams = new URLSearchParams(queryString);
-            const redir = urlParams.get('r'); 
-            if (!redir.includes("https://")) {
-                window.location.href = "https://" + redir
-            } else {
-                window.location.href = redir
-            }
-        </script>
-    </head>
-    <body style="margin: 0px;overflow: hidden;">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:thumbnail" content="https://google.com/images/">
+    <meta name="og:title" content="Reddstone35">
+    <meta name="og:url" content="https://reddstone35.com">
+    <meta name="og:description" content="Reddstone35's website. A place to see many things such as youtube and twitch updates. All of my socials are on here if you go to social.reddstone35.com">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Reddstone35</title>
+  </head>
+  <body>
+    <header class="fixed-relatively main-header">
+      <nav class="main-navagation-bar-all">
         <div>
-            <div class="center-object">
-                <p id="clan-invite-text-style">Nothing is here right now but... <a id="clan-invite-button1" href="https://hab1b1clan.github.io">I do have a clan!</a></p>
-                <a class="button-discord-redir" href="discord/">Discord</a>
-                <a href="store/" class="button-store-redir">Store</a>
-                <input onclick="this.value='This will become the socials button'" type="button" value="Placholder" id="button-files-secret-1"></input>
-            </div>
+          <div>
+            <a href="/">Home</a>
+            <a href="/discord/">Discord</a>
+            <a href="https://hab1b1clan.github.io" target="_blank">Hab1b1 Clan</a>
+            <a href="/store/">Store</a>
+            <a href="/socials/">Socials</a>
+          </div>
         </div>
-    </body>
+      </nav>
+    </header>
+    <section class="section-main-undernav">
+      <div>
+        <div id="youtube">
+          <h1>Youtube</h1>
+          <p>You should go check out my youtube channel! I make gaming videos!</p>
+        </div>
+        <div id=twitch>
+          <h1>Twitch</h1>
+          <p>Go see my Twitch! I stream games with my friends, you can also find updates and exclusive streaming content.</p>
+        </div>
+      </div>
+    </section>
+    <section class="text-align">
+      <h1 class="main-page-head1">--Links--</h1>
+      <div>
+        <p>Instagram: <a href="https://www.instagram.com/reddstone35">reddstone35</a></p>
+        <p>TikTok: <a href="https://www.tiktok.com/@reddstone35">@reddstone35</a></p>
+        <p>Twitch: <a href="https://www.twitch.tv/reddstone35">Reddstone35</a></p>
+        <p>Youtube: <a href="https://www.youtube.com/channel/UC0ouJNIXzJEvtOCW7K7WoOw">Reddstone35</a></p>
+        <p>My Discord Server: <a href="https://discord.gg/ZkunEJ7CUY">https://discord.gg/ZkunEJ7CUY</a></p>
+      </div>
+    </section>
+  </body>
 </html>

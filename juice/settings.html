@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:thumbnail" content="https://google.com/images/">
-    <meta name="og:title" content="Reddstone35">
-    <meta name="og:url" content="https://reddstone35.com">
-    <meta name="og:description" content="Reddstone35's website. A place to see many things such as youtube and twitch updates. All of my socials are on here if you go to social.reddstone35.com">
+    <title>Enter Password</title>
     <link rel="stylesheet" href="/styles/main.css">
-    <title>Reddstone35</title>
   </head>
   <body>
     <header class="fixed-relatively main-header">
@@ -25,11 +21,16 @@
         </div>
       </nav>
     </header>
-    <section class="section-main-undernav">
-      <div class="main-page-center">
-        <!-- <input type="text" placeholder="Search for a product." name="" id=""> -->
-        <h1 class="main-page-head1">Store</h1>
-        <a class="default-btn main-store-index-links" href="MoneyManager/">Money Manager</a>
+    <section>
+      <div class="center">
+        <script src="/src/scripts/main/juice.js"></script>
+        <div>
+          <form action="settings-real">
+            <label for="pass">Password:</label>
+            <input class="text-input" type="password" name="pass">
+            <input type="submit" class="default-btn">
+          </form>
+        </div>
       </div>
     </section>
   </body>
