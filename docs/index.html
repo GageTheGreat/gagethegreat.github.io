@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="shortcut icon" href="/favicon.ico?">
+    <title>Reddstone35 - Docs</title>
+    <link rel="stylesheet" href="/src/scripts/codeHighlight/styles/default.min.css">
+    <script src="/src/scripts/codeHighlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+  <body>
+    <header class="fixed-relatively main-header">
+      <nav class="main-navagation-bar-all">
+        <div>
+          <div>
+            <a href="/">Home</a>
+            <a href="/discord/">Discord</a>
+            <a href="https://hab1b1clan.github.io" target="_blank">Hab1b1 Clan</a>
+            <a href="/store/">Store</a>
+            <a href="/socials/">Socials</a>
+            <a href="/docs/">Docs</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="docs-section-main">
+      <h1>Docs</h1>
+      <hline></hline>
+      <h1>Scripts</h1>
+      <p><strong>These are some scripts that I have archived here for later use.</strong></p>
+      <br>
+      <p>Chromebook Scripts (for school)</p>
+      <pre>
+        <div class="code-aria language-javascript">// #########################
+// # Chromebook JS scripts #
+// #     Made by Gage      #
+// #########################
+
+// dev tools console - unblocked
+function CheckForConsoleLog(txt) {
+  if (txt.includes('console.log')) {
+    var newCode = txt.replace('console.log', 'alert');
+    return newCode;
+  } else {
+    return txt;
+  }
+}
+
+try {
+  code = window.prompt('Enter code to execute:');
+  eval(CheckForConsoleLog(code));
+} catch (ReferenceError) {
+  let code = window.prompt('Enter code to execute:');
+  eval(CheckForConsoleLog(code));
+}
+
+// calculator - for cheating - doesn't show on history
+try {
+  try {
+    nums = window.prompt('Enter Numbers to calculate');
+    alert(eval(nums));
+  } catch (error) {
+    alert('You must type a valid problem. (ex. 5+5)');
+  }
+} catch (ReferenceError) {
+  try {
+    let nums = window.prompt('Enter Numbers to calculate');
+    alert(eval(nums));
+  } catch (error) {
+    alert('You must type a valid problem. (ex. 5+5)');
+  }
+}
+        </div>
+      </pre>
+      <div class="scripts-details">
+        <a href="scripts/chromebook_scirpts.js" class="default-btn default-btn-small">View Raw</a> <a href="scripts/chromebook_scirpts.js" class="default-btn default-btn-small" download>Download</a>
+      </div>
+    </section>
+  </body>
+</html>
