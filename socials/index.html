@@ -33,11 +33,17 @@
             <h1 class="main-page-head1">Socials</h1>
             <hline></hline>
             <h1>YouTube</h1>
+            <script src="https://apis.google.com/js/api.js"></script>
+            <p><span class="socials-yt-subcount" id="socials-yt-subCount"></span> Subscribers</p>
             <p>My latest YouTube video:</p>
           </div>
           <div>
-            <iframe class="social-iframe" width="913" height="515" src="https://www.youtube.com/embed/cERCteTpAUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br><br><br>
+            <div class="social-iframe-container-top margin-300">
+              <div class="social-iframe-container">
+                <iframe class="social-iframe" src="https://www.youtube.com/embed/cERCteTpAUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
+              </div>
+            </div>
+            <br>
           </div>
           <div>
             <a class="default-btn" href="https://www.youtube.com/channel/UC0ouJNIXzJEvtOCW7K7WoOw?sub_confirmation=1" target="_blank">Subscribe</a>
@@ -48,10 +54,23 @@
         <div id="social-twitch-main">
           <div>
             <h1>Twitch</h1>
-            <p>My latest Twitch stream:</p>
+            <p>My Twitch stream:</p>
             <div>
-              [Stream goes here]
-              <br><br><br>
+              <div class="social-iframe-container-top margin-300">
+                <div class="social-iframe-container">
+                  <div id="twitch-embed" class="social-iframe"></div>
+                  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                  <script type="text/javascript">
+                    new Twitch.Embed("twitch-embed", {
+                      width: "100%",
+                      height: "100%",
+                      channel: "reddstone35",
+                    });
+                  </script>
+                </div>
+              </div>
+              <a class="default-btn default-btn-purple default-btn-small" href="twitch/stream">Fullscreen</a>
+              <br>
             </div>
           </div>
           <div>
@@ -71,4 +90,5 @@
       </div>
     </section>
   </body>
+  <script src="/src/scripts/socials/yt.js"></script>
 </html>
