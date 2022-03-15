@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="/404.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:thumbnail" content="https://google.com/images/">
+    <meta name="og:title" content="Plumboy">
+    <meta name="og:url" content="https://reddstone35.com">
+    <meta name="og:description" content="Shhhhh, this is a secret">
+    <!-- <meta name="og:description" content="15kyessir's website. A place to see youtube and twitch updates. All of my socials are on here if you go to 15kyessir.reddstone35.com/socials"> -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>15kyessir</title>
+  </head>
+  <body>
+    <header class="fixed-relatively main-header">
+      <nav class="main-navagation-bar-all">
+        <div>
+          <div>
+            <a href="/">Home</a>
+            <a class="disabled" disabled="disabled">Coming Soon!</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="section-main-undernav">
+      <div class="main-page-center">
+        <div id="social-youtube-main">
+          <div>
+            <h1>YouTube</h1>
+            <script src="https://apis.google.com/js/api.js"></script>
+            <p><span class="socials-yt-subcount" id="socials-yt-subCount"></span>null Subscribers</p>
+            <p>My most recent YouTube video:</p>
+          </div>
+          <div class="social-iframe-container-top margin-300">
+            <div class="social-iframe-container">
+              <iframe class="social-iframe" src="https://www.youtube.com/embed/{video-id}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div>
+            <a class="default-btn" href="https://www.youtube.com/channel/{channel-id}?sub_confirmation=1" target="_blank">Subscribe to Plumboy</a>
+            <a class="default-btn" href="https://www.youtube.com/channel/{channel-id}" target="_blank">View Channel</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="/src/scripts/socials/yt.js"></script>
+</html>
