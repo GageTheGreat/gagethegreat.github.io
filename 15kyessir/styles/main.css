@@ -273,10 +273,32 @@ iframe {
   text-align: center;
 }
 .sidebar-button {
-  position: relative;
+  position: absolute;
+  top: 0px;
   text-decoration: none;
   font-family: "League Gothic";
-  word-spacing: 2%;
+  letter-spacing: 1px;
   font-size: 26px;
-  padding: 10px 0px;
+  color: black;
+  margin: 0px;
+  user-select: none;
+  width: 100%;
+  left: 0px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.sidebar-button::after {
+  content: '';
+  border-bottom: 2px solid rgba(0, 0, 0, 0.438);
+  display: block;
+  padding-top: 10px;
+}
+.sidebar-button::before {
+  content: '';
+  border-bottom: 2px solid rgba(0, 0, 0, 0.438);
+  display: block;
+  margin-bottom: 10px;
+}
+.sidebar-button:hover {
+  background-color: rgba(119, 119, 119, 0.356);
 }
