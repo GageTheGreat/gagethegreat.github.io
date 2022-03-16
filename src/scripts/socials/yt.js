@@ -1,4 +1,4 @@
-const youtubeKey = "AIzaSyBNEUYJK5Tc3HjhQGIZkIOgzRPMCNU3ItU";
+const youtubeKey = "AIzaSyBvq4st9BGVbJn3tFG03Ioy1G9K6yqfFzo";
 const youtubeUser = 'UC0ouJNIXzJEvtOCW7K7WoOw';
 const subCount = document.getElementById('socials-yt-subCount');
 
