@@ -1,4 +1,4 @@
-const youtubeKey = config.SECRET_API_KEY;
+const youtubeKey = "AIzaSyBvq4st9BGVbJn3tFG03Ioy1G9K6yqfFzo";
 const youtubeUser = '{channel_id}';
 const subCount = document.getElementById('socials-yt-subCount');
 

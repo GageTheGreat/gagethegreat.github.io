@@ -274,8 +274,8 @@ iframe {
   text-align: center;
 }
 .sidebar-button {
-  position: absolute;
   top: 0px;
+  position: absolute;
   text-decoration: none;
   font-family: "League Gothic";
   letter-spacing: 1px;
@@ -307,4 +307,10 @@ iframe {
 }
 .sidebar-button:hover {
   background-color: rgba(119, 119, 119, 0.356);
+}
+.sidebar-pb-reddstone35 {
+  font-size: 15px;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 20px;
 }
