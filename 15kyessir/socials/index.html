@@ -13,24 +13,33 @@
     <link rel="stylesheet" href="../styles/main.css">
     <title>15kyessir</title>
   </head>
-  <body>
-    <header class="fixed-relatively main-header">
+  <body id="body">
+    <header class="main-header">
       <nav class="main-navagation-bar-all">
         <div>
           <div>
-            <a href="/">Home</a>
-            <a class="disabled" disabled="disabled">Coming Soon!</a>
+            <button class="sideview-nav-button" id="navlist-button">
+              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: px; height: 100%;"><g class="style-scope yt-icon"><path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z" class="style-scope yt-icon"></path></g></svg>
+            </button>
+            <span class="page-title">Socials</span>
           </div>
         </div>
       </nav>
     </header>
+    <section class="sidebar" id="sidebar">
+      <div>
+        <a href="/15kyessir/" class="disabled fake-link sidebar-button">Home</a>
+        <span class="disabled fake-link sidebar-button sidebar-button-2" id="sidebutton-not-availible">Discord (Coming Soon)</span>
+        <a href="/15kyessir/socials/" class="disabled fake-link sidebar-button sidebar-button-3">Socials</a>
+      </div>
+    </section>
     <section class="section-main-undernav">
       <div class="main-page-center">
         <div id="social-youtube-main">
           <div>
             <h1>YouTube</h1>
-            <script src="https://apis.google.com/js/api.js"></script>
-            <p><span class="socials-yt-subcount" id="socials-yt-subCount"></span>null Subscribers</p>
+            <!-- <script src="https://apis.google.com/js/api.js"></script> -->
+            <p><span class="socials-yt-subcount" id="socials-yt-subCount">0</span> Subscribers</p>
             <p>My most recent YouTube video:</p>
           </div>
           <div class="social-iframe-container-top margin-300">
@@ -39,12 +48,13 @@
             </div>
           </div>
           <div>
-            <a class="default-btn" href="https://www.youtube.com/channel/{channel-id}?sub_confirmation=1" target="_blank">Subscribe to Plumboy</a>
+            <a class="default-btn" href="https://www.youtube.com/channel/{channel-id}?sub_confirmation=1" target="_blank">Subscribe to 15kyessir</a>
             <a class="default-btn" href="https://www.youtube.com/channel/{channel-id}" target="_blank">View Channel</a>
           </div>
         </div>
       </div>
     </section>
   </body>
-  <script src="/15kyessir/src/scripts/socials/yt.js"></script>
+  <!-- script src="/15kyessir/src/scripts/socials/yt.js"></script> -->
+  <script src="/15kyessir/src/scripts/main/index.js"></script>
 </html>

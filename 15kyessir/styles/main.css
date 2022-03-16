@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Chewy&family=Coda&family=Comfortaa&family=Dongle:wght@300&family=League+Gothic&family=Righteous&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Chewy&family=Coda&family=Comfortaa&family=Dongle:wght@300&family=League+Gothic&family=Nunito&family=Oswald&family=PT+Sans&family=Righteous&family=Supermercado+One&family=Ubuntu:wght@300&display=swap');
 
 
 @font-face {
@@ -46,7 +46,7 @@
 
 * {
   font-size: 1.063em;
-  font-family: 'Comic Sans MS';
+  font-family: 'Nunito';
 }
 
 hline {
@@ -66,10 +66,10 @@ body {
 }
 
 p {
-  font-family: 'Comic Sans MS';
+  font-family: 'Nunito';
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Comic Sans MS';
+  font-family: 'PT Sans';
 }
 
 .center {
@@ -132,7 +132,7 @@ section {
 }
 .section-main-undernav {
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 .fixed-relatively {
   background-color: black;
@@ -146,23 +146,24 @@ section {
   text-align: center;
 }
 .default-btn {
+  position: relative;
+  z-index: 0;
   display: inline-block;
   text-decoration: none;
   color: black;
-  background-color: transparent;
+  background-color: rgb(0, 174, 255);
   font-size: 30px;
   padding: 7px 43px;
-  border-radius: 50px;
+  border-radius: 5px;
   transition: 0.12s;
   margin: 15px;
   user-select: none;
-  border: 5px solid rgba(0, 255, 34, 0.712);
 }
 .default-btn:hover {
-  background-color: rgba(0, 153, 145, 0.794);
+  background-color: rgb(0, 38, 255);
   box-shadow: 0px 0px 10px rgb(0, 126, 57);
-  padding: 10px 46px;
-  border: 2px solid rgba(0, 255, 34, 0.712);
+  padding: 7px 43px;
+  color: white;
 }
 .default-btn:active {
   transition-duration: 0.03s;
@@ -280,12 +281,17 @@ iframe {
   letter-spacing: 1px;
   font-size: 26px;
   color: black;
-  margin: 0px;
   user-select: none;
   width: 100%;
   left: 0px;
   transition-duration: 0.2s;
   cursor: pointer;
+}
+.sidebar-button-2 {
+  top: 53px;
+}
+.sidebar-button-3 {
+  top: 106px;
 }
 .sidebar-button::after {
   content: '';
