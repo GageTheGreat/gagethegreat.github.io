@@ -22,6 +22,21 @@
   100%{color: red;}
 }
 
+::-webkit-scrollbar-track {
+  background: #dadada;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  width: 7px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  float: right;
+}
+
 @keyframes nav-button-hover {
   0% {
     border: 1px black solid;
@@ -63,6 +78,7 @@ body {
   margin: 0px;
   height: 100%;
   z-index: -1;
+  overflow-y: overlay;
 }
 
 p {
@@ -93,7 +109,7 @@ header {
   background-color: rgb(0, 255, 242);
   /* background-image: linear-gradient(180deg, rgb(255, 0, 0), yellow); */
   /* box-shadow: 0px 2px 10px black; */
-  z-index: 2;
+  z-index: 3;
 }
 .main-header {
   position: relative;
@@ -138,9 +154,8 @@ section {
   background-color: black;
   position: -webkit-sticky;
   position: sticky;
-  top: 1px;
+  top: 0px;
   margin: 0;
-  z-index: 1;
 }
 .main-page-center {
   text-align: center;
@@ -264,7 +279,7 @@ iframe {
 .sidebar {
   background-color: #ffffff;
   left: -260px;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   box-shadow: 2px -00px 10px rgba(0, 0, 0, 0.486);
   width: 250px;
