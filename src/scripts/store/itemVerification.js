@@ -6,7 +6,7 @@ const productversion = urlParams.get('pv');
 const tytext = urlParams.get('ty_t');
 
 
-var productpath = `${location.protocol}//${location.host}/files/download/programs/${generalitem}/${product}`
+var productpath = `${location.protocol}//${location.host}/file/download/programs/${generalitem}/${product}`
 
 var validmps = ["MoneySystem"]
 var validty_t = ["Money System"]
