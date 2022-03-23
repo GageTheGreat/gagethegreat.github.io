@@ -251,3 +251,15 @@ pre {
 .margin-100 {
   margin: 20px 10%;
 }
+.plusminus-icon {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  height: 35px;
+  width: 35px;
+  top: 40px;
+}
+.plusminus-icon span {
+  position: relative; 
+  top: -7px;
+}
