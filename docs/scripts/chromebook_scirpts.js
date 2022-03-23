@@ -37,10 +37,6 @@ try {
     alert('You must type a valid problem. (ex. 5+5)');
   }
 }
-<<<<<<< Updated upstream
-//500 fake server error.
-document.write("<title>500 | Server Error</title><h1>500 - Internal Server Error</h1>The requested address 197.85.37.6 is not responding.")
-=======
 
 //fake web error - for making teachers think the website is broken.
 var errorCode = window.prompt("What error are you planning on triggering. (Enter error code):");
@@ -57,4 +53,3 @@ if (errorCode == "400") {
 } else {
   alert("That code is not supported. Find supported codes at: https://reddstone35.com/redirect?token=DOC+tS-UMKsPfiftRcjYTEFpP5tyF34FhAwiv");
 }
->>>>>>> Stashed changes
