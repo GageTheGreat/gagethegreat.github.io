@@ -51,5 +51,5 @@ if (errorCode == "400") {
 } else if (errorCode == "429") {
   document.write(`<title>429 | Too Many Requests</title><h1>429 - Too Many Requests</h1>You have sent too many requests to the server at host: ${window.location.hostname}. Wait a moment, and try again.`);
 } else {
-  alert("That code is not supported. Find supported codes at: https://reddstone35.com/redirect?token=DOC+tS-UMKsPfiftRcjYTEFpP5tyF34FhAwiv");
+  alert("That code is not supported. Find supported codes at: https://reddstone35.com/redirect?token=DOC_tS-UMKsPfiftRcjYTEFpP5tyF34FhAwiv");
 }
