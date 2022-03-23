@@ -10,7 +10,7 @@ function getFile(_token) {
   if (_token === "PlumTOS-YLi3M8Q4TXbe") {
     redirect("https://docs.google.com/document/d/1c0XF0HsGfmcMwNNdo5M1dJYgLZIft-yWYYiAA6RMPZo/view")
   } else if (_token === "DOC_tS-UMKsPfiftRcjYTEFpP5tyF34FhAwiv") {
-    redirect("/docs/scripts/usage.html#chromebook-scripts_fake-error")
+    redirect("/docs/scripts/usage#chromebook-scripts_fake-error")
   } else if (_token === "test") {
     document.write(" to nowhere!")
   } else if (_token === null){
