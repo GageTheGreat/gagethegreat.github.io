@@ -176,7 +176,7 @@ section {
 }
 .default-btn:hover {
   background-color: rgb(0, 38, 255);
-  box-shadow: 0px 0px 10px rgb(0, 126, 57);
+  box-shadow: 0px 0px 10px rgb(2, 67, 187);
   padding: 7px 43px;
   color: white;
 }
