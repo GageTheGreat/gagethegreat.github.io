@@ -1,5 +1,5 @@
 const youtubeKey = "AIzaSyBvq4st9BGVbJn3tFG03Ioy1G9K6yqfFzo";
-const youtubeUser = '{channel_id}';
+const youtubeUser = 'UC-ZMqCTXL-ZjwCFb09W9_3w';
 const subCount = document.getElementById('socials-yt-subCount');
 
 let getSubscribers = () => {

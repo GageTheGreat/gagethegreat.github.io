@@ -42,6 +42,6 @@ document.addEventListener('mouseup', function(e) {
   }
 });
 
-document.getElementById("sidebutton-not-availible").addEventListener("click", function(e) {
-  alert("That feature is unavailible.")
-});
+// document.getElementById("sidebutton-not-availible").addEventListener("click", function(e) {
+//   alert("That feature is unavailible.")
+// });

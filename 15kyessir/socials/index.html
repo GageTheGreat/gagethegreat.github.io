@@ -40,22 +40,42 @@
           <div>
             <h1>YouTube</h1>
             <!-- <script src="https://apis.google.com/js/api.js"></script> -->
-            <p><span class="socials-yt-subcount" id="socials-yt-subCount">0</span> Subscribers</p>
+            <p><span class="socials-yt-subcount" id="socials-yt-subCount"></span> Subscribers</p>
             <p>My most recent YouTube video:</p>
           </div>
           <div class="social-iframe-container-top margin-300">
             <div class="social-iframe-container">
-              <iframe class="social-iframe" src="https://www.youtube.com/embed/{video-id}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
+              <iframe class="social-iframe" src="https://www.youtube.com/embed/uoBtEq6ZPhk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
             </div>
           </div>
           <div>
-            <a class="default-btn" href="https://www.youtube.com/channel/{channel-id}?sub_confirmation=1" target="_blank">Subscribe to 15kyessir</a>
-            <a class="default-btn" href="https://www.youtube.com/channel/{channel-id}" target="_blank">View Channel</a>
+            <a class="default-btn" href="https://www.youtube.com/channel/UC-ZMqCTXL-ZjwCFb09W9_3w?sub_confirmation=1" target="_blank">Subscribe to 15kyessir</a>
+            <a class="default-btn" href="https://www.youtube.com/channel/UC-ZMqCTXL-ZjwCFb09W9_3w" target="_blank">View Channel</a>
           </div>
+        </div>
+        <br>
+        <h1>Twitch</h1>
+            <!-- <script src="https://apis.google.com/js/api.js"></script> -->
+            <p>My Twitch stream:</p>
+        <div class="social-iframe-container-top margin-300">
+          <div class="social-iframe-container">
+            <div id="twitch-embed" class="social-iframe"></div>
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+            <script type="text/javascript">
+              new Twitch.Embed("twitch-embed", {
+                width: "100%",
+                height: "100%",
+                channel: "15kyessir",
+              });
+            </script>
+          </div>
+        </div>
+        <div>
+          <a class="default-btn" href="https://twitch.tv/15kyessir" target="_blank">View Channel</a>
         </div>
       </div>
     </section>
   </body>
-  <!-- script src="/15kyessir/src/scripts/socials/yt.js"></script> -->
+  <script src="/15kyessir/src/scripts/socials/yt.js"></script>
   <script src="/15kyessir/src/scripts/main/index.js"></script>
 </html>
