@@ -263,3 +263,45 @@ pre {
   position: relative; 
   top: -7px;
 }
+.socials-yt-channel-switcher {
+  box-shadow: 0px 0px 3px;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 0px 0px;
+  user-select: none;
+}
+.socials-yt-channel-card {
+  position: relative;
+  width: 310px;
+  height: 64px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background-color: rgba(214, 214, 214, 0.425);
+}
+.socials-yt-channel-card:nth-child(1) {
+  border-radius: 100px 100px 0px 0px;
+  border-bottom: 1px solid black;
+}
+.socials-yt-channel-card:nth-child(3) {
+  border-radius: 0px 0px 100px 100px;
+  border-top: 1px solid black;
+}
+.socials-yt-channel-card:hover {
+  background-color: rgba(161, 161, 161, 0.425);
+}
+.socials-yt-channel-card img {
+  position: relative;
+  margin: -2px;
+  padding: -10px;
+  width: 40px;
+  top: 3px;
+  border-radius: 5px;
+}
+.socials-yt-channel-card span {
+  position: relative;
+  top: -10px;
+  margin-left: 10px;
+}
