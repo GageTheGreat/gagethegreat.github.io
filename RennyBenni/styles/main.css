@@ -39,4 +39,5 @@ header {
   border-radius: 7px;
   user-select: none;
   -webkit-user-drag: none;
+  margin: 10px;
 }
