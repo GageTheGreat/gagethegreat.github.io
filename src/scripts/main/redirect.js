@@ -12,7 +12,7 @@ function getFile(_token) {
   } else if (_token === "DOC_tS-UMKsPfiftRcjYTEFpP5tyF34FhAwiv") {
     redirect("/docs/scripts/usage#chromebook-scripts_fake-error")
   } else if (_token === "rNBnY1") {
-    redirect("/RennyBenni")
+    redirect("/RennyBenni/")
   } else if (_token === null){
     redirect("/?error=REDIRECT_TOKEN_NOT_FOUND")
   } else {
