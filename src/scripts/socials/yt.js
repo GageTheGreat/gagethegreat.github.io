@@ -23,7 +23,7 @@ function loadChannel(channelName) {
         getSubscribers("UC0ouJNIXzJEvtOCW7K7WoOw")
         subButton.setAttribute("href", "https://www.youtube.com/channel/UC0ouJNIXzJEvtOCW7K7WoOw?sub_confirmation=1")
         viewButton.setAttribute("href", "https://www.youtube.com/channel/UC0ouJNIXzJEvtOCW7K7WoOw")
-        videoMiniplayer.setAttribute("src", "https://www.youtube.com/embed/Y_G8MdsNei8")
+        videoMiniplayer.setAttribute("src", "https://www.youtube.com/embed/hdmpdDIGIKg")
         document.getElementById("reddstone35coding-channel-viewstats").style.backgroundColor = "rgba(214, 214, 214, 0.425)"
         document.getElementById("reddstone35-channel-viewstats").style.backgroundColor = "rgba(0, 0, 0, 0.225)"
     } else if (channelName === "reddstone35coding") {
