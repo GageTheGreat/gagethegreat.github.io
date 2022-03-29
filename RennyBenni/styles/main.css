@@ -34,3 +34,9 @@ header {
   color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
 }
+.main-art-display {
+  display: inline-block;
+  border-radius: 7px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
