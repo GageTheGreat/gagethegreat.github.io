@@ -1,0 +1,72 @@
+/* styles.css */
+
+/* Add styles here to customize the appearance of your app */
+
+body {
+  background-color: rgb(19, 19, 34);
+  text-align: center;
+  margin: 0px;
+  max-width: fit-content;
+  width: max-content;
+  max-width: max-content;
+}
+.num-btn {
+  font-size: 40px;
+  margin: 10px;
+  padding: 0px 15px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer; 
+  transition-duration: 0.1s;
+  min-width: 52.25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.num-btn:hover {
+  box-shadow: 0px 0px 10px white; 
+}
+.num-btn:active {
+  background-color: greenyellow;
+}
+.num-btn-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0px;
+  padding: 0px;
+  white-space: nowrap;
+}
+.num-output {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  top: 10%;
+  left: 50%;
+  padding-bottom: 40px;
+  transform: translate(-50%,-50%);
+}
+.clear-btn {
+  font-size: 40px;
+  margin: 10px;
+  padding: 0px 15px;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer; 
+  transition-duration: 0.1s;
+}
+.clear-btn:hover {
+  box-shadow: 0px 0px 10px red; 
+}
+.call-btn {
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: min-content;
+  user-select: none
+}

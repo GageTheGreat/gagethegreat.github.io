@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="/styles/callapp.css" rel="stylesheet">
+    <title>Dialer</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div>
+        <p id="num-output" class="num-output"></p>
+      </div>
+      <div class="num-btn-container">
+        <div><button class="num-btn">1</button><button class="num-btn">2</button><button class="num-btn">3</button></div>
+        <div><button class="num-btn">4</button><button class="num-btn">5</button><button class="num-btn">6</button></div>
+        <div><button class="num-btn">7</button><button class="num-btn">8</button><button class="num-btn">9</button></div>
+        <div><button class="num-btn">*</button><button class="num-btn">0</button><button class="num-btn">#</button></div>
+        <div><button id="clear-output" class="clear-btn">Clear</button></div>
+        <br>
+        <div><button id="call-num" class="call-btn"><img src="/src/img/phone-call-icon.svg" alt="svg" width="60"></button></div>
+      </div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="/src/scripts/apps/callapp/renderer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/styles/callapp.css" rel="stylesheet">
+    <title>Dialer</title>
+  </head>
+  <body>
+    <audio autoplay>
+      <source src="/src/sound/phonecall.mp3" type="audio/mpeg">
+    </audio>
+    <div>
+      <p id="call-text" class="num-output"></p>
+    </div>
+    <div class="num-btn-container">
+      <div><button id="hangup-btn" class="call-btn"><img src="/src/img/phone-hangup-icon.svg" alt="svg" width="60"></button></div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="/src/scripts/apps/callapp/callinprogress.js"></script>
+  </body>
+</html>
