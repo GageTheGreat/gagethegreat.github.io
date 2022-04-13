@@ -305,3 +305,49 @@ pre {
   top: -10px;
   margin-left: 10px;
 }
+.links-link-btn {
+  position: relative;
+  color: black;
+  display: block;
+  background-color: white;
+  padding-top: 2px;
+  width: 75%;
+  left: 12.5%;
+  border-radius: 3px;
+  text-decoration: none;
+  user-select: none;
+  transition-duration: 0.17s;
+  margin-top: 20px;
+
+}
+.links-link-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.363);
+}
+.links-link-youtube:hover {
+  background-color: red;
+  color: white;
+}
+.links-link-twitch:hover {
+  background-color: #9147ff;
+  color: white;
+}
+.links-link-tiktok:hover {
+  background-color: rgba(254, 44, 85, 1.0);
+  color: white;
+}
+.links-link-discord:hover {
+  background-color: rgb(88, 101, 242);
+  color: white;
+}
+.links-link-instagram:hover {
+  background-color: rgb(255, 0, 128);
+  color: white;
+}
+.links-link-container{
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  width: 100%;
+  transform: translate(-50%,-50%);
+}
