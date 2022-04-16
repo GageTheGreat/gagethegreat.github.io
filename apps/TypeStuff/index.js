@@ -15,6 +15,5 @@ if (e.target !== input)
 })
 
 function resizeInput() {
-  input.value.toLowerCase()
   this.style.width = `100%`;
 }
