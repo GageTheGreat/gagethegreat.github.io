@@ -1,12 +1,18 @@
 body {
   background-color: black;
   overflow: hidden;
+  
+}
+@font-face {
+  font-family: "MC_Reg";
+  src: url("/src/fonts/MinecraftRegular.otf");
 }
 *{
   cursor: hidden;
   user-select: none;
 }
 .type-input {
+  font-family: "MC_Reg";
   position: absolute;
   background-color: black;
   border: none;
