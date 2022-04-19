@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/apps/giveaway.css" rel="stylesheet">
+    <title>Giveaway App</title>
+  </head>
+  <body>
+    <br>
+    <div>
+      <h1 class="main-head">Giveaway App</h1>
+      <br>
+      <br>
+      <div id="giveaways" class="giveaway-function">
+        <p class="find-winners-text">Find your winner below!</p>
+        <button class="giveaway-roll-btn" id="giveaway-roll-btn">GIVEAWAY</button>
+        <br><br><br>
+        <input type="text" class="giveaway-add-person" placeholder="Enter Participants here" id="add-participants" maxlength="78">
+        <br><br>
+        <hr>
+        <p class="find-winners-text">Participants:</p>
+        <div id="participants-list">
+          
+        </div>
+      </div>
+      <div class="dim-screen" id="win-ann-dim"></div>
+      <div class="giveaway-winner-announcement-container" id="win-ann-mess">
+        <span id="winner-announcement">And the winner is</span>
+        <span id="winner">...</span>
+      </div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="/src/scripts/apps/giveaway/index.js"></script>
+  </body>
+</html>
