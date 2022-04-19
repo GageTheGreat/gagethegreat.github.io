@@ -51,6 +51,7 @@ body {
   text-align: center;
   background-color: #444;
   color: white;
+  overflow: overlay;
 }
 .main-head {
   position: absolute;

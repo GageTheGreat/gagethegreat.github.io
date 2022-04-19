@@ -49,6 +49,7 @@ rollBTN.addEventListener("click", (e) => {
     var winner = participants[winnerNumber]
     console.log(winner)
     // console.log(participants[winner] + " wins!")
+    document.body.style.overflow = "hidden"
     document.getElementById("win-ann-mess").style.display = "block"
     document.getElementById("win-ann-dim").style.display = "block"
     document.getElementById("win-ann-mess").style.animation = "winner-announce-anim 1s forwards"
