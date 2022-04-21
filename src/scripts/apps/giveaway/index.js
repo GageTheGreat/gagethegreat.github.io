@@ -44,7 +44,7 @@ window.onload = () => {
       //count = participants.length
     } 
   }
-  if (participantQuery !== undefined) {
+  if (participantQuery !== undefined && participantQuery !== null) {
     participants = JSON.parse(participantQuery)
     for (var i = 0; i < participants.length; i++) {
       count = i + 1
@@ -57,7 +57,8 @@ window.onload = () => {
       participantBox.append(document.createElement("br"))
       localStorage.setItem("par_s", JSON.stringify(participants))
       //count = participants.length
-    } 
+    }
+    window.location.reload()
   }
 }
 
@@ -102,7 +103,7 @@ rollBTN.addEventListener("click", (e) => {
       setTimeout(() => {
         document.getElementById("winner-close-btn").style.display = "block"
         document.getElementById("winner-close-btn").style.animation = "winner-announce-anim 1s forwards"
-      }, 2000);
+      }, 1000);
     }, 3000);
   }
 })
@@ -125,3 +126,6 @@ document.getElementById("par-clear-list").addEventListener("click", (e) => {
 document.getElementById("par-save-list").addEventListener("click", (e) => {
   localStorage.setItem("par_s", JSON.stringify(participants))
 })
+
+var clean_uri = location.protocol +"//"+ location.host + location.pathname;
+window.history.replaceState({}, document.title, clean_uri);
