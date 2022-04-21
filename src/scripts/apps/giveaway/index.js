@@ -10,6 +10,11 @@
 //   shell.openExternal('https://reddstone35.com')
 // });
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const participantQuery = urlParams.get('participants');
+
+
 
 console.log("Oh, hello there!")
 let participants = []
@@ -20,6 +25,8 @@ let rollBTN = document.getElementById("giveaway-roll-btn")
 let addParticipantsInput = document.getElementById("add-participants")
 let participantBox = document.getElementById("participants-list")
 var winner
+
+
 
 window.onload = () => {
   //localStorage.setItem("par_s", "")
@@ -34,6 +41,21 @@ window.onload = () => {
       participantBox.append(document.createElement("br"))
       participantBox.append(document.createElement("br"))
       participantBox.append(document.createElement("br"))
+      //count = participants.length
+    } 
+  }
+  if (participantQuery !== undefined) {
+    participants = JSON.parse(participantQuery)
+    for (var i = 0; i < participants.length; i++) {
+      count = i + 1
+      participantBox.append(document.createElement("parcard")/*.innerHTML = addParticipantsInput.value*/)
+      document.getElementsByTagName("parcard")[i].textContent = participants[i]
+      document.getElementsByTagName("parcard")[i].classList.add("participant-card")
+      document.getElementsByTagName("parcard")[i].id = `parcard${i}`
+      participantBox.append(document.createElement("br"))
+      participantBox.append(document.createElement("br"))
+      participantBox.append(document.createElement("br"))
+      localStorage.setItem("par_s", JSON.stringify(participants))
       //count = participants.length
     } 
   }
