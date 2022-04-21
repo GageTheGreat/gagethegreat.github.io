@@ -10,6 +10,7 @@
 //   shell.openExternal('https://reddstone35.com')
 // });
 
+
 console.log("Oh, hello there!")
 let participants = []
 let p = document.createElement("p")
@@ -18,7 +19,25 @@ let br = document.createElement("br")
 let rollBTN = document.getElementById("giveaway-roll-btn")
 let addParticipantsInput = document.getElementById("add-participants")
 let participantBox = document.getElementById("participants-list")
+var winner
 
+window.onload = () => {
+  //localStorage.setItem("par_s", "")
+  if (localStorage.getItem("par_s") !== null) {
+    participants = JSON.parse(localStorage.getItem("par_s"))
+    for (var i = 0; i < participants.length; i++) {
+      count = i + 1
+      participantBox.append(document.createElement("parcard")/*.innerHTML = addParticipantsInput.value*/)
+      document.getElementsByTagName("parcard")[i].textContent = participants[i]
+      document.getElementsByTagName("parcard")[i].classList.add("participant-card")
+      document.getElementsByTagName("parcard")[i].id = `parcard${i}`
+      participantBox.append(document.createElement("br"))
+      participantBox.append(document.createElement("br"))
+      participantBox.append(document.createElement("br"))
+      //count = participants.length
+    } 
+  }
+}
 
 document.addEventListener("keypress", (e) => {
   if (String(e.key) === "Enter" && addParticipantsInput.value !== "") {
@@ -35,18 +54,18 @@ document.addEventListener("keypress", (e) => {
   }
 })
 
-// for (var i = 0; i < document.getElementsByTagName("parcard").length; i++) {
-//   document.getElementById(`parcard${i}`).addEventListener("click", (e) => {
-//     console.log("hi")
-//     e.remove()
-//   })
-// }
+for (var i = 0; i < document.getElementsByTagName("parcard").length; i++) {
+  document.getElementsByTagName("parcard" + i).addEventListener("click", (e) => {
+    console.log("hi")
+    e.target.remove()
+  })
+}
 
 rollBTN.addEventListener("click", (e) => {
   if (participants[0] !== undefined) {
     var maxPeople = participants.length
     var winnerNumber = Math.floor(Math.random() * maxPeople)
-    var winner = participants[winnerNumber]
+    winner = participants[winnerNumber]
     console.log(winner)
     // console.log(participants[winner] + " wins!")
     document.body.style.overflow = "hidden"
@@ -58,6 +77,29 @@ rollBTN.addEventListener("click", (e) => {
       document.getElementById("winner-announcement").textContent = "And the winner is: "
       document.getElementById("winner").style.animation = "glow-rainbow 6s infinite"
       document.getElementById("winner").textContent = winner
+      setTimeout(() => {
+        document.getElementById("winner-close-btn").style.display = "block"
+        document.getElementById("winner-close-btn").style.animation = "winner-announce-anim 1s forwards"
+      }, 2000);
     }, 3000);
   }
+})
+
+document.getElementById("winner-close-btn").addEventListener("click", (e) => {
+  document.getElementById("win-ann-mess").style.display = "none"
+  document.getElementById("win-ann-dim").style.display = "none"
+  winner = ""
+  document.getElementById("winner-announcement").textContent = "And the winner is"
+  document.getElementById("winner").textContent = "..."
+  document.getElementById("winner").style.animation = ""
+  document.body.style.overflow = "overlay"
+  document.getElementById("winner-close-btn").style.display = "none"
+})
+document.getElementById("par-clear-list").addEventListener("click", (e) => {
+  participants = []
+  localStorage.setItem("par_s", JSON.stringify(participants))
+  window.location.reload()
+})
+document.getElementById("par-save-list").addEventListener("click", (e) => {
+  localStorage.setItem("par_s", JSON.stringify(participants))
 })
