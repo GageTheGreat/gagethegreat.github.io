@@ -1,21 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Chewy&family=Coda&family=Comfortaa&family=Dongle:wght@300&family=Righteous&family=Supermercado+One&display=swap');
 
 @keyframes glow-rainbow {
-  00% {color: red;}
-  10% {color: darkorange;}
-  20% {color: yellow;}
-  30% {color: lime;}
-  40% {color: green;}
-  50% {color: rgb(0, 230, 153);}
-  60% {color: aqua;}
-  70% {color: blue;}
-  80% {color: rgb(77, 0, 128);}
-  90% {color: rgb(204, 0, 255);}
-  100%{color: red;}
+  00% {
+    color: red;
+  }
+
+  10% {
+    color: darkorange;
+  }
+
+  20% {
+    color: yellow;
+  }
+
+  30% {
+    color: lime;
+  }
+
+  40% {
+    color: green;
+  }
+
+  50% {
+    color: rgb(0, 230, 153);
+  }
+
+  60% {
+    color: aqua;
+  }
+
+  70% {
+    color: blue;
+  }
+
+  80% {
+    color: rgb(77, 0, 128);
+  }
+
+  90% {
+    color: rgb(204, 0, 255);
+  }
+
+  100% {
+    color: red;
+  }
 }
 
 :root {
   --background-main: #f3a384a1;
+}
+
+ul {
+  list-style-position: inside;
+  transform: translateX(-1ch);
 }
 
 * {
@@ -34,12 +71,19 @@ body {
   background-color: var(--background-main);
   margin: 0px;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 p {
   font-family: 'Baloo Bhaijaan 2';
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Coda';
 }
 
@@ -64,10 +108,12 @@ header a {
   margin: auto 2% auto 2%;
   display: inline-block;
 }
+
 header {
   position: absolute;
   width: 100%;
 }
+
 .main-navagation-bar-all {
   position: relative;
   top: -1px;
@@ -79,11 +125,13 @@ header {
   margin: 0;
   user-select: none;
 }
+
 .main-header::after {
   content: '';
   display: block;
   border-bottom: 3px solid white;
 }
+
 .main-navagation-bar-all a {
   display: inline-block;
   border: solid 1px white;
@@ -94,16 +142,20 @@ header {
   text-decoration: none;
   transition: 0.15s;
 }
+
 .main-navagation-bar-all a:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
+
 section {
   margin: auto 10px auto;
   z-index: 0;
 }
+
 .section-main-undernav {
   position: relative;
 }
+
 .fixed-relatively {
   background-color: black;
   position: -webkit-sticky;
@@ -112,9 +164,11 @@ section {
   margin: 0;
   z-index: 1;
 }
+
 .main-page-center {
   text-align: center;
 }
+
 .default-btn {
   display: inline-block;
   text-decoration: none;
@@ -128,67 +182,83 @@ section {
   user-select: none;
   border: none;
 }
+
 .default-btn:hover {
   background-color: rgba(153, 0, 0, 0.794);
   color: white;
   transform: translatey(-4px);
   box-shadow: 0px 4px 7px gray;
 }
+
 .default-btn:active {
   transition-duration: 0.03s;
   transform: translate(0px);
   box-shadow: none;
 }
+
 .main-store-index-links {
   position: relative;
   top: 9em;
 }
+
 .main-page-head1 {
   text-decoration: underline;
   font-size: 28px;
 }
+
 .default-btn-purple {
   background-color: rgb(95, 0, 184);
   color: white;
 }
+
 .default-btn-purple:hover {
   color: black;
   background-color: rgb(158, 54, 255);
 }
+
 .store-section-versions {
   position: relative;
   top: 100px;
 }
+
 .socials-tiktok {
   position: relative;
   height: 30px;
   bottom: 5px;
 }
+
 input:focus {
   outline: none;
 }
+
 .text-input {
   background-color: transparent;
   border: none;
   border-bottom: black solid 2px;
   text-align: center;
 }
+
 .juice-code-disabled {
   color: #777;
 }
+
 .social-iframe {
   width: 57%;
   height: 605px;
 }
+
 .seperator {
   user-select: none;
 }
+
 iframe {
   user-select: none;
 }
+
 .text-align {
   text-align: center;
 }
+
 .docs-section-main {
   background-color: white;
   margin: 20px 10%;
@@ -197,16 +267,19 @@ iframe {
   text-align: center;
   padding: 15px;
 }
+
 .default-btn-small {
   font-size: 20px;
   padding: 2px 12px;
   border-radius: 3px;
   margin: 7px;
 }
+
 .default-btn-small:hover {
   transform: translatey(-2px);
   box-shadow: 0px 2px 4px gray;
 }
+
 .code-aria {
   font-family: monospace;
   border-radius: 3px;
@@ -215,26 +288,37 @@ iframe {
   text-align: left;
   margin-bottom: -70px;
 }
+
 button {
   cursor: pointer;
 }
+
 pre {
-  white-space: pre-wrap;       /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  white-space: pre-wrap;
+  /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
 }
+
 .socials-yt-subcount {
   font-weight: 900;
   animation: glow-rainbow linear 13s infinite;
 }
+
 .social-iframe-container {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio */
 }
+
 .social-iframe {
   position: absolute;
   width: 100%;
@@ -245,12 +329,15 @@ pre {
   right: 0%;
   border: none;
 }
+
 .margin-300 {
   margin: 0px 20%;
 }
+
 .margin-100 {
   margin: 20px 10%;
 }
+
 .plusminus-icon {
   position: relative;
   padding: 0px;
@@ -259,10 +346,12 @@ pre {
   width: 35px;
   top: 40px;
 }
+
 .plusminus-icon span {
-  position: relative; 
+  position: relative;
   top: -7px;
 }
+
 .socials-yt-channel-switcher {
   box-shadow: 0px 0px 3px;
   display: inline-block;
@@ -270,6 +359,7 @@ pre {
   padding: 0px 0px;
   user-select: none;
 }
+
 .socials-yt-channel-card {
   position: relative;
   width: 310px;
@@ -281,17 +371,21 @@ pre {
   font-size: 18px;
   background-color: rgba(214, 214, 214, 0.425);
 }
+
 .socials-yt-channel-card:nth-child(1) {
   border-radius: 100px 100px 0px 0px;
   border-bottom: 1px solid black;
 }
+
 .socials-yt-channel-card:nth-child(3) {
   border-radius: 0px 0px 100px 100px;
   border-top: 1px solid black;
 }
+
 .socials-yt-channel-card:hover {
   background-color: rgba(161, 161, 161, 0.425);
 }
+
 .socials-yt-channel-card img {
   position: relative;
   margin: -2px;
@@ -300,11 +394,13 @@ pre {
   top: 3px;
   border-radius: 5px;
 }
+
 .socials-yt-channel-card span {
   position: relative;
   top: -10px;
   margin-left: 10px;
 }
+
 .links-link-btn {
   position: relative;
   color: black;
@@ -320,34 +416,41 @@ pre {
   margin-top: 20px;
 
 }
+
 .links-link-btn:hover {
   transform: translateY(-4px);
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.363);
 }
+
 .links-link-youtube:hover {
   background-color: red;
   color: white;
 }
+
 .links-link-twitch:hover {
   background-color: #9147ff;
   color: white;
 }
+
 .links-link-tiktok:hover {
   background-color: rgba(254, 44, 85, 1.0);
   color: white;
 }
+
 .links-link-discord:hover {
   background-color: rgb(88, 101, 242);
   color: white;
 }
+
 .links-link-instagram:hover {
   background-color: rgb(255, 0, 128);
   color: white;
 }
-.links-link-container{
+
+.links-link-container {
   position: absolute;
   left: 50%;
   top: 35%;
   width: 100%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }

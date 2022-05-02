@@ -1,3 +1,108 @@
-<script>
-  window.location = "../"
-</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="shortcut icon" href="/favicon.ico?">
+  <title>Reddstone35 - Docs</title>
+  <link rel="stylesheet" href="/src/scripts/codeHighlight/styles/default.min.css">
+  <script src="/src/scripts/codeHighlight/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+  <header class="fixed-relatively main-header">
+    <nav class="main-navagation-bar-all">
+      <div>
+        <div>
+          <a href="/">Home</a>
+          <a href="/discord/">Discord</a>
+          <a href="https://hab1b1clan.github.io" target="_blank">Hab1b1 Clan</a>
+          <a href="/store/">Store</a>
+          <a href="/socials/">Socials</a>
+          <a href="/docs/">Docs</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="docs-section-main">
+    <h1>Docs</h1>
+    <hline></hline>
+    <h1>Scripts</h1>
+    <p><strong>These are some scripts that I have archived here for later use.</strong></p>
+    <br>
+    <p>Chromebook Scripts (for school)</p>
+    <button class="default-btn plusminus-icon" title="Make Font Bigger"
+      id="docs-script-make-font-bigger-1"><span>+</span></button>
+    <button class="default-btn plusminus-icon" title="Make Font Smaller"
+      id="docs-script-make-font-smaller-1"><span>-</span></button>
+    <pre>
+        <div class="language-diff code-aria text-small" id="docs-script-aria-1">// ###############################
+// #    Chromebook JS scripts    #
+// # Made by Super Secret Person #
+// ###############################
+
+// dev tools console - unblocked
+function CheckForConsoleLog(txt) {
+  if (txt.includes('console.log')) {
+    var newCode = txt.replace('console.log', 'alert');
+    return newCode;
+  } else {
+    return txt;
+  }
+}
+
+try {
+  code = window.prompt('Enter code to execute:');
+  eval(CheckForConsoleLog(code));
+} catch (ReferenceError) {
+  let code = window.prompt('Enter code to execute:');
+  eval(CheckForConsoleLog(code));
+}
+
+// calculator - for cheating - doesn't show on history
+try {
+  try {
+    nums = window.prompt('Enter Numbers to calculate');
+    alert(eval(nums));
+  } catch (error) {
+    alert('You must type a valid problem. (ex. 5+5)');
+  }
+} catch (ReferenceError) {
+  try {
+    let nums = window.prompt('Enter Numbers to calculate');
+    alert(eval(nums));
+  } catch (error) {
+    alert('You must type a valid problem. (ex. 5+5)');
+  }
+}
+
+//fake web error - for making teachers think the website is broken.
+var errorCode = window.prompt("What error are you planning on triggering. (Enter error code):");
+if (errorCode == "400") {
+  document.write(`&lt;title&gt;400 | Bad Request&lt;/title&gt;&lt;h1&gt;400 - Bad Request&lt;/h1&gt;The request sent to the host: ${window.location.hostname} was incorrect. You can try visiting this page at a later time.`);
+} else if (errorCode == "403") {
+  document.write(`&lt;title&gt;403 | Forbidden&lt;/title&gt;&lt;h1&gt;403 - Forbidden&lt;/h1&gt;The web page: ${window.location.hostname + window.location.pathname} is not accessible. You can try visiting this page at a later time.`);
+} else if (errorCode == "404") {
+  document.write(`&lt;title&gt;404 | Not Found&lt;/title&gt;&lt;h1&gt;404 - Not Found&lt;/h1&gt;The web page: ${window.location.hostname + window.location.pathname} was not found. You can try visiting this page at a later time.`);
+} else if (errorCode == "500") {
+  document.write(`&lt;title&gt;500 | Internal Server Error&lt;/title&gt;&lt;h1&gt;500 - Internal Server Error&lt;/h1&gt;The server at host ${window.location.hostname} cannot handle this request. You can try visiting this page at a later time.`);
+} else if (errorCode == "429") {
+  document.write(`&lt;title&gt;429 | Too Many Requests&lt;/title&gt;&lt;h1&gt;429 - Too Many Requests&lt;/h1&gt;You have sent too many requests to the server at host: ${window.location.hostname}. Wait a moment, and try again.`);
+} else {
+  alert("That code is not supported. Find supported codes at: https://reddstone35.com/redirect?token=DOC_tS-UMKsPfiftRcjYTEFpP5tyF34FhAwiv");
+}
+        </div>
+      </pre>
+    <div class="scripts-details">
+      <a href="scripts/chromebook_scirpts.js" class="default-btn default-btn-small">View Raw</a> <a
+        href="scripts/chromebook_scirpts.js" class="default-btn default-btn-small" download>Download</a>
+    </div>
+  </section>
+  <script src="/src/scripts/main/index.js"></script>
+</body>
+
+</html>
