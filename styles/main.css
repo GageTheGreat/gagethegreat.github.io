@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Chewy&family=Coda&family=Comfortaa&family=Dongle:wght@300&family=Righteous&family=Supermercado+One&display=swap');
 
+@keyframes bg-move-index {
+  0% {
+    background-position: 0% 25%;
+  }
+
+  25% {
+    background-position: 25% 75%;
+  }
+
+  50% {
+    background-position: 50% 100%;
+  }
+
+  75% {
+    background-position: 100% 25%;
+  }
+
+  100% {
+    background-position: 0% 25%;
+  }
+}
+
 @keyframes glow-rainbow {
   00% {
     color: red;
@@ -47,7 +69,8 @@
 }
 
 :root {
-  --background-main: #f3a384a1;
+  --brand-color: #ff8000;
+  --bg-gradient: radial-gradient(ellipse at bottom right, #af00ff, #df00ff, #ff00a5, #ff0000, var(--brand-color), #ffbb00, #ffee00)
 }
 
 ul {
@@ -68,7 +91,11 @@ hline {
 }
 
 body {
-  background-color: var(--background-main);
+  text-align: center;
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  animation: bg-move-index 15s ease-in-out infinite;
+  background-size: 200% 200%;
   margin: 0px;
   height: 100%;
   scroll-behavior: smooth;
@@ -112,6 +139,7 @@ header a {
 header {
   position: absolute;
   width: 100%;
+  box-shadow: 0px 0px 20px 0px;
 }
 
 .main-navagation-bar-all {
@@ -173,7 +201,9 @@ section {
   display: inline-block;
   text-decoration: none;
   color: black;
-  background-color: rgba(255, 0, 0, 0.712);
+  /* background-color: rgba(255, 0, 0, 0.712); */
+  /* background: var(--bg-gradient); */
+  background-color: rgb(141, 1, 255);
   font-size: 30px;
   padding: 10px;
   border-radius: 5px;
@@ -184,10 +214,14 @@ section {
 }
 
 .default-btn:hover {
-  background-color: rgba(153, 0, 0, 0.794);
+  /* background-color: rgba(153, 0, 0, 0.794); */
+  background: var(--bg-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 1px black;
   color: white;
   transform: translatey(-4px);
-  box-shadow: 0px 4px 7px gray;
+  box-shadow: 0 0 0 3px black, 0px 4px 7px rgba(0, 0, 0, 0.548);
 }
 
 .default-btn:active {
@@ -277,7 +311,7 @@ iframe {
 
 .default-btn-small:hover {
   transform: translatey(-2px);
-  box-shadow: 0px 2px 4px gray;
+  box-shadow: 0 0 0 2px black, 0px 2px 4px rgba(0, 0, 0, 0.548);
 }
 
 .code-aria {
