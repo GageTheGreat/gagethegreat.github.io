@@ -99,6 +99,7 @@ body {
   margin: 0px;
   height: 100%;
   scroll-behavior: smooth;
+  overflow: overlay;
 }
 
 p {
@@ -112,6 +113,13 @@ h4,
 h5,
 h6 {
   font-family: 'Coda';
+}
+
+iframe {
+  border: none;
+  padding: none;
+  width: 0px;
+  height: 64px;
 }
 
 .center {
@@ -216,10 +224,9 @@ section {
 .default-btn:hover {
   /* background-color: rgba(153, 0, 0, 0.794); */
   background: var(--bg-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-stroke: 1px black;
   color: white;
+  background: var(--bg-gradient);
+  background-size: 200%;
   transform: translatey(-4px);
   box-shadow: 0 0 0 3px black, 0px 4px 7px rgba(0, 0, 0, 0.548);
 }
@@ -239,6 +246,10 @@ section {
   text-decoration: underline;
   font-size: 28px;
 }
+
+/* .newnav-container {
+  box-shadow: ;
+} */
 
 .default-btn-purple {
   background-color: rgb(95, 0, 184);
@@ -311,6 +322,8 @@ iframe {
 
 .default-btn-small:hover {
   transform: translatey(-2px);
+  background: var(--bg-gradient);
+  background-size: 200% 200%;
   box-shadow: 0 0 0 2px black, 0px 2px 4px rgba(0, 0, 0, 0.548);
 }
 
@@ -487,4 +500,19 @@ pre {
   top: 35%;
   width: 100%;
   transform: translate(-50%, -50%);
+}
+
+.center-div-to-root {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.newnav {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: ;
 }

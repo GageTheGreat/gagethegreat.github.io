@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="og:thumbnail" content="https://google.com/images/">
-    <meta name="og:title" content="Reddstone35">
-    <meta name="og:url" content="https://reddstone35.com">
-    <meta name="og:description" content="Reddstone35's website. A place to see many things such as youtube and twitch updates. All of my socials are on here if you go to social.reddstone35.com">
-    <link rel="stylesheet" href="/styles/main.css">
-    <title>Reddstone35</title>
-  </head>
-  <body>
-    <header class="fixed-relatively main-header">
-      <nav class="main-navagation-bar-all">
-        <div>
-          <div>
-            <a href="/">Home</a>
-            <a href="/discord/">Discord</a>
-            <a href="https://hab1b1clan.github.io" target="_blank">Hab1b1 Clan</a>
-            <a href="/store/">Store</a>
-            <a href="/socials/">Socials</a>
-            <a href="/docs/">Docs</a>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <section class="main-page-center">
-      <div class="margin-100">
-        <div class="social-iframe-container-top">
-          <div class="social-iframe-container">
-            <div id="twitch-embed" class="social-iframe"></div>
 
-            <!-- Load the Twitch embed JavaScript file -->
-            <script src="https://embed.twitch.tv/embed/v1.js"></script>
-        
-            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
-            <script type="text/javascript">
-              new Twitch.Embed("twitch-embed", {
-                width: "100%",
-                height: "100%",
-                channel: "reddstone35",
-                // Only needed if this page is going to be embedded on other websites
-                parent: ["embed.example.com", "othersite.example.com"]
-              });
-            </script>
-            
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="og:thumbnail" content="https://google.com/images/">
+  <meta name="og:title" content="Reddstone35">
+  <meta name="og:url" content="https://reddstone35.com">
+  <meta name="og:description"
+    content="Reddstone35's website. A place to see many things such as youtube and twitch updates. All of my socials are on here if you go to social.reddstone35.com">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>Reddstone35</title>
+</head>
+
+<body>
+  <header class="fixed-relatively main-header">
+    <nav class="main-navagation-bar-all">
+      <div>
+        <div>
+          <a href="/">Home</a>
+          <a href="/discord/">Discord</a>
+          <a href="https://hab1b1clan.github.io" target="_blank">Hab1b1 Clan</a>
+          <a href="/store/">Store</a>
+          <a href="/socials/">Socials</a>
+          <a href="/docs/">Docs</a>
         </div>
       </div>
-      <a class="default-btn default-btn-small" href="../">Return to Socials</a>
-    </section>
-  </body>
+    </nav>
+  </header>
+  <section class="main-page-center">
+    <div class="margin-100">
+      <div class="social-iframe-container-top">
+        <div class="social-iframe-container">
+          <div id="twitch-embed" class="social-iframe"></div>
+
+          <!-- Load the Twitch embed JavaScript file -->
+          <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+          <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+          <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+              width: "100%",
+              height: "100%",
+              channel: "reddstone35",
+              parent: "reddstone35.com"
+            });
+          </script>
+
+        </div>
+      </div>
+    </div>
+    <a class="default-btn default-btn-small" href="../">Return to Socials</a>
+  </section>
+</body>
+
 </html>
