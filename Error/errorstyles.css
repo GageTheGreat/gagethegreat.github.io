@@ -1,6 +1,9 @@
 .pError {
-  position: relative;
   font-size: 26px;
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.pErrorBox {
+  transform: translateY(-50%);
 }
