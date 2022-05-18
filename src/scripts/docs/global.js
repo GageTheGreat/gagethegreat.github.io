@@ -17,7 +17,7 @@ function docsDarkMode(on) {
     document.getElementsByClassName("docs-section-main")[0].style.color = "#ffffff"
     document.querySelectorAll("hline")[0].style.borderColor = "#ffffff"
     for (var i = 0; i < document.getElementsByTagName("a").length; i++) {
-      if (document.getElementsByTagName("a")[i].closest(".docs-section-main"))
+      if (document.getElementsByTagName("a")[i].closest(".docs-section-main") && document.getElementsByTagName("a")[i].classList[0] !== "default-btn")
       document.getElementsByTagName("a")[i].style.color = "#429bf5"
     }
     if (document.querySelectorAll(".code-aria")[0] !== undefined) {
@@ -30,7 +30,7 @@ function docsDarkMode(on) {
     document.getElementsByClassName("docs-section-main")[0].style.color = "#000000"
     document.querySelectorAll("hline")[0].style.borderColor = "#000000"
     for (var i = 0; i < document.getElementsByTagName("a").length; i++) {
-      if (document.getElementsByTagName("a")[i].closest(".docs-section-main"))
+      if (document.getElementsByTagName("a")[i].closest(".docs-section-main") && document.getElementsByTagName("a")[i].classList[0] !== "default-btn")
       document.getElementsByTagName("a")[i].style.color = "#0000ee"
     }
     if (document.querySelectorAll(".code-aria")[0] !== undefined) {
@@ -47,4 +47,3 @@ if (localStorage.getItem("docs-settings-dark") === "true") {
   docsDarkMode(false)
   darkModeSwitch.checked = false
 }
-console.log(localStorage.getItem("docs-settings-dark"))
