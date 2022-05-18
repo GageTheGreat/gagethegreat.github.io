@@ -16,6 +16,10 @@ function docsDarkMode(on) {
     document.getElementsByClassName("docs-section-main")[0].style.background = "#1f2226"
     document.getElementsByClassName("docs-section-main")[0].style.color = "#ffffff"
     document.querySelectorAll("hline")[0].style.borderColor = "#ffffff"
+    for (var i = 0; i < document.getElementsByTagName("a").length; i++) {
+      if (document.getElementsByTagName("a")[i].closest(".docs-section-main"))
+      document.getElementsByTagName("a")[i].style.color = "#429bf5"
+    }
     if (document.querySelectorAll(".code-aria")[0] !== undefined) {
       document.querySelectorAll(".code-aria")[0].style.backgroundColor = "#15181a"
     }
@@ -25,6 +29,10 @@ function docsDarkMode(on) {
     document.getElementsByClassName("docs-section-main")[0].style.background = "#ffffff"
     document.getElementsByClassName("docs-section-main")[0].style.color = "#000000"
     document.querySelectorAll("hline")[0].style.borderColor = "#000000"
+    for (var i = 0; i < document.getElementsByTagName("a").length; i++) {
+      if (document.getElementsByTagName("a")[i].closest(".docs-section-main"))
+      document.getElementsByTagName("a")[i].style.color = "#0000ee"
+    }
     if (document.querySelectorAll(".code-aria")[0] !== undefined) {
       document.querySelectorAll(".code-aria")[0].style.backgroundColor = "rgb(255, 238, 217)"
     }
