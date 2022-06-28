@@ -5,18 +5,20 @@ html {
   font-size: 24px;
   text-align: center;
   margin: 0px;
+  background-color: #202124;
+  color: white;
 }
 body {
   margin: 0px;
 }
 .header {
   user-select: none;
-  background-color: rgba(167, 167, 167, 0.664);
+  background-color: rgba(27, 27, 27, 0.664);
   padding: 15px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.788);
 }
 a {
-  color: #0000ee;
+  color: #22aaee;
 }
 .countdown, .countdown *{
   user-select: none;
