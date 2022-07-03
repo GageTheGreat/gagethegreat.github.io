@@ -80,12 +80,17 @@
           <div>
             <div class="social-iframe-container-top margin-300">
               <div class="social-iframe-container">
+                
                 <div id="twitch-embed" class="social-iframe"></div>
+
+                    <!-- Load the Twitch embed JavaScript file -->
                 <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+                <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
                 <script type="text/javascript">
                   new Twitch.Embed("twitch-embed", {
-                    width: "100%",
-                    height: "100%",
+                    width: 100,
+                    height: 100,
                     channel: "reddstone35",
                     // Only needed if this page is going to be embedded on other websites
                     parent: ["reddstone35.com"]

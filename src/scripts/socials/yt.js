@@ -1,8 +1,8 @@
 const key = 'AIzaSyBvq4st9BGVbJn3tFG03Ioy1G9K6yqfFzo';
-let selectedChannel = sessionStorage.getItem('selectedChannel');
-const subButton = document.getElementById('social-yt-subscribe-btn');
-const viewButton = document.getElementById('social-yt-viewchannel-btn');
-const videoMiniplayer = document.getElementById(
+let selectedChannelYT = sessionStorage.getItem('selectedChannel');
+const subButtonYT = document.getElementById('social-yt-subscribe-btn');
+const viewButtonYT = document.getElementById('social-yt-viewchannel-btn');
+const videoMiniplayerYT = document.getElementById(
   'youtube-video-mostrecent-miniplayer'
 );
 
@@ -24,17 +24,17 @@ let getSubscribers = (user) => {
 function loadChannel(channelName) {
   if (channelName === 'reddstone35') {
     getSubscribers('UC0ouJNIXzJEvtOCW7K7WoOw');
-    subButton.setAttribute(
+    subButtonYT.setAttribute(
       'href',
       'https://www.youtube.com/channel/UC0ouJNIXzJEvtOCW7K7WoOw?sub_confirmation=1'
     );
-    viewButton.setAttribute(
+    viewButtonYT.setAttribute(
       'href',
       'https://www.youtube.com/channel/UC0ouJNIXzJEvtOCW7K7WoOw'
     );
-    videoMiniplayer.setAttribute(
+    videoMiniplayerYT.setAttribute(
       'src',
-      'https://www.youtube.com/embed/MZuBXEMskFs'
+      'https://www.youtube.com/embed/_K4EdOAA_aE'
     );
     document.getElementById(
       'reddstone35coding-channel-viewstats'
@@ -44,15 +44,15 @@ function loadChannel(channelName) {
     ).style.backgroundColor = 'rgba(0, 0, 0, 0.225)';
   } else if (channelName === 'reddstone35coding') {
     getSubscribers('UCVmxCH9EAokXX5b9YiNHOwQ');
-    subButton.setAttribute(
+    subButtonYT.setAttribute(
       'href',
       'https://www.youtube.com/channel/UCVmxCH9EAokXX5b9YiNHOwQ?sub_confirmation=1'
     );
-    viewButton.setAttribute(
+    viewButtonYT.setAttribute(
       'href',
       'https://www.youtube.com/channel/UCVmxCH9EAokXX5b9YiNHOwQ'
     );
-    videoMiniplayer.setAttribute('src', 'https://www.youtube.com/embed/none');
+    videoMiniplayerYT.setAttribute('src', 'https://www.youtube.com/embed/none');
     document.getElementById(
       'reddstone35-channel-viewstats'
     ).style.backgroundColor = 'rgba(214, 214, 214, 0.425)';
@@ -63,11 +63,11 @@ function loadChannel(channelName) {
 }
 
 window.onload = function () {
-  if (selectedChannel === null) {
+  if (selectedChannelYT === null) {
     sessionStorage.setItem('selectedChannel', 'reddstone35');
     loadChannel('reddstone35');
   } else {
-    loadChannel(selectedChannel);
+    loadChannel(selectedChannelYT);
   }
 };
 
