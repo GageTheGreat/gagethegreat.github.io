@@ -53,3 +53,36 @@ if (errorCode == "400") {
 } else {
   alert("That code is not supported. Find supported codes at: https://reddstone35.com/redirect?token=DOC_tS-UMKsPfiftRcjYTEFpP5tyF34FhAwiv");
 }
+
+//write text to document
+try {
+  let SCHHSCRIPTtext = window.prompt('what text do you want?');
+  let SCHHSCRIPTcolor = window.prompt('what text color do you want?');
+  let SCHHSCRIPTsize = window.prompt('what text size do you want?');
+  let SCHHSCRIPTborder = window.prompt('what border do you want?');
+  let SCHHSCRIPTfont = window.prompt('what font do you want?');
+  let SCHHSCRIPTstyle = window.prompt('what text style do you want?');
+
+  try {
+    document.write(
+      `<p style="color:${SCHHSCRIPTcolor};font-size:${SCHHSCRIPTsize};border:${SCHHSCRIPTborder};font-family:${SCHHSCRIPTfont};text-decoration:${SCHHSCRIPTstyle};">${SCHHSCRIPTtext}<p>`
+    );
+  } catch (error) {
+    alert('An error occurred, check spelling and try again.');
+  }
+} catch (ReferenceError) {
+  SCHHSCRIPTtext = window.prompt('what text do you want?');
+  SCHHSCRIPTcolor = window.prompt('what text color do you want?');
+  SCHHSCRIPTsize = window.prompt('what text size do you want?');
+  SCHHSCRIPTborder = window.prompt('what border do you want?');
+  SCHHSCRIPTfont = window.prompt('what font do you want?');
+  SCHHSCRIPTstyle = window.prompt('what text style do you want?');
+
+  try {
+    document.write(
+      `<p style="color:${SCHHSCRIPTcolor};font-size:${SCHHSCRIPTsize};border:${SCHHSCRIPTborder};font-family:${SCHHSCRIPTfont};text-decoration:${SCHHSCRIPTstyle};">${SCHHSCRIPTtext}<p>`
+    );
+  } catch (error) {
+    alert('An error occurred, check spelling and try again.');
+  }
+}
