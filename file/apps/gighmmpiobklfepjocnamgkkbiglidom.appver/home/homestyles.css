@@ -23,6 +23,38 @@ body{
     background-size: cover;
     border-radius: 8px;
 }
+
+#roblox-block{
+    padding: 50px;
+    background-image: url(roblox-icon.png);
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    border-radius: 8px;
+    background-position: -2px 0;
+}
+
+#osu-block{
+    padding: 50px;
+    background-image: url(osu-logo.png);
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#newtab-block{
+    padding: 50px;
+    background-image: url(chrome-logo.png);
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    border-radius: 8px;
+}
+
 #header-top-home{
     font-size: 60px;
     font-family: 'Courier New', Courier, monospace;
