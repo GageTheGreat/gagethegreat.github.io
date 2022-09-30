@@ -217,7 +217,7 @@ section {
   /* background: var(--bg-gradient); */
   background-color: rgb(141, 1, 255);
   font-size: 30px;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   transition: 0.2s;
   margin: 15px;
@@ -609,4 +609,9 @@ pre {
   padding: 0;
   top: 100px;
   right: calc(10% + 20px);
+}
+
+.hidden-link {
+  color: black;
+  text-decoration: none;
 }

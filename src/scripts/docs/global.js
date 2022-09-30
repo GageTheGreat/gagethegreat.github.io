@@ -17,8 +17,13 @@ function docsDarkMode(on) {
     document.getElementsByClassName("docs-section-main")[0].style.color = "#ffffff"
     document.querySelectorAll("hline")[0].style.borderColor = "#ffffff"
     for (var i = 0; i < document.getElementsByTagName("a").length; i++) {
-      if (document.getElementsByTagName("a")[i].closest(".docs-section-main") && document.getElementsByTagName("a")[i].classList[0] !== "default-btn")
-      document.getElementsByTagName("a")[i].style.color = "#429bf5"
+      if (document.getElementsByTagName("a")[i].closest(".docs-section-main") && document.getElementsByTagName("a")[i].classList[0] !== "default-btn" && document.getElementsByTagName("a")[i].closest(".docs-section-main") && document.getElementsByTagName("a")[i].classList[0] !== "hidden-link" && document.getElementsByTagName("a")[i].parentElement.parentElement.parentElement.classList[0] !== 'main-navagation-bar-all') {
+        document.getElementsByTagName("a")[i].style.color = "#429bf5"
+      }
+      
+    }
+    for (var i = 0; i < document.getElementsByClassName('hidden-link').length; i++) {
+      document.getElementsByClassName("hidden-link")[i].style.color = "white"
     }
     if (document.querySelectorAll(".code-aria")[0] !== undefined) {
       document.querySelectorAll(".code-aria")[0].style.backgroundColor = "#15181a"
@@ -30,12 +35,18 @@ function docsDarkMode(on) {
     document.getElementsByClassName("docs-section-main")[0].style.color = "#000000"
     document.querySelectorAll("hline")[0].style.borderColor = "#000000"
     for (var i = 0; i < document.getElementsByTagName("a").length; i++) {
-      if (document.getElementsByTagName("a")[i].closest(".docs-section-main") && document.getElementsByTagName("a")[i].classList[0] !== "default-btn")
-      document.getElementsByTagName("a")[i].style.color = "#0000ee"
+      if (document.getElementsByTagName("a")[i].closest(".docs-section-main") && document.getElementsByTagName("a")[i].classList[0] !== "default-btn" && document.getElementsByTagName("a")[i].closest(".docs-section-main") && document.getElementsByTagName("a")[i].classList[0] !== "hidden-link" && document.getElementsByTagName("a")[i].parentElement.parentElement.parentElement.classList[0] !== 'main-navagation-bar-all') {
+        document.getElementsByTagName("a")[i].style.color = "#0000ee"
+      }
+      
+    }
+    for (var i = 0; i < document.getElementsByClassName('hidden-link').length; i++) {
+      document.getElementsByClassName("hidden-link")[i].style.color = "black"
     }
     if (document.querySelectorAll(".code-aria")[0] !== undefined) {
       document.querySelectorAll(".code-aria")[0].style.backgroundColor = "rgb(255, 238, 217)"
     }
+
     localStorage.setItem("docs-settings-dark", "false")
   }
 }
