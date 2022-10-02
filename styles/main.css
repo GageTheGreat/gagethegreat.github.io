@@ -241,6 +241,21 @@ section {
   box-shadow: none;
 }
 
+.default-btn:disabled {
+  color: rgba(0, 0, 0, 0.459);
+  background-color: rgb(182, 93, 255);
+  cursor: not-allowed;
+}
+
+.default-btn:disabled:hover {
+  color: rgba(0, 0, 0, 0.459);
+  background: rgb(182, 93, 255);
+  cursor: not-allowed;
+  transform: translatey(0px);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+
 .main-store-index-links {
   position: relative;
   top: 9em;
@@ -323,6 +338,7 @@ iframe {
   border-radius: 3px;
   margin: 7px;
 }
+
 
 .default-btn-small:hover {
   transform: translatey(-2px);
