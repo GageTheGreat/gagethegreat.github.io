@@ -25,8 +25,11 @@ function docsDarkMode(on) {
     for (var i = 0; i < document.getElementsByClassName('hidden-link').length; i++) {
       document.getElementsByClassName("hidden-link")[i].style.color = "white"
     }
+
     if (document.querySelectorAll(".code-aria")[0] !== undefined) {
-      document.querySelectorAll(".code-aria")[0].style.backgroundColor = "#15181a"
+      for (i = 0; i < document.querySelectorAll(".code-aria").length; i++) {
+        document.querySelectorAll(".code-aria")[i].style.backgroundColor = "#15181a"
+      }
     }
 
     localStorage.setItem("docs-settings-dark", "true")
