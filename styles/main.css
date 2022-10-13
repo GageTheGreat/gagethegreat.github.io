@@ -264,6 +264,7 @@ section {
 .main-page-head1 {
   text-decoration: underline;
   font-size: 28px;
+  font-family: 'Coda';
 }
 
 /* .newnav-container {
@@ -630,4 +631,8 @@ pre {
 .hidden-link {
   color: black;
   text-decoration: none;
+}
+.h1-font {
+  font-family: 'Coda';
+  font-size: 24.5388px;
 }
