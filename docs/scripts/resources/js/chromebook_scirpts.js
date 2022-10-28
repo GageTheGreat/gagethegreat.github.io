@@ -86,3 +86,12 @@ try {
     alert('An error occurred, check spelling and try again.');
   }
 }
+
+//edit text
+document.designMode='on';
+console.log(document.designMode);
+
+//change tab title
+var newTitle = window.prompt("What do you want the title to be?");
+document.title = newTitle;
+console.log(document.title);
