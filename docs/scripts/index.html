@@ -141,6 +141,14 @@ console.log(document.designMode);
 var newTitle = window.prompt("What do you want the title to be?");
 document.title = newTitle;
 console.log(document.title);
+
+//change tab icon
+var newIcon = window.prompt("What do you want the icon to be? (ex: https://example.com/newicon.ico)");
+var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+link.type = 'image/x-icon';
+link.rel = 'shortcut icon';
+link.href = newIcon;
+document.getElementsByTagName('head')[0].appendChild(link);
         </div>
       </pre>
     <div class="scripts-details">
