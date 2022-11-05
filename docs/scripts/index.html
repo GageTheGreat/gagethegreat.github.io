@@ -135,12 +135,13 @@ try {
 
 //edit text
 document.designMode='on';
-console.log(document.designMode);
+document.body.contentEditable='true';
+void 0;
 
 //change tab title
 var newTitle = window.prompt("What do you want the title to be?");
 document.title = newTitle;
-console.log(document.title);
+void 0;
 
 //change tab icon
 var newIcon = window.prompt("What do you want the icon to be? (ex: https://example.com/newicon.ico)");
