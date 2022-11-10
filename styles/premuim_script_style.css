@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Chewy&family=Coda&family=Comfortaa&family=Dongle:wght@300&family=Righteous&family=Supermercado+One&display=swap');
+body {
+  background-color: rgb(255, 238, 217);;
+  font-family: 'Baloo Bhaijaan 2';
+  text-align: center;
+  overflow:hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Coda';
+}
+.password-input-1 {
+  outline: none;
+  border: 2px solid black;
+  height: 30px;
+  width: 30%;
+  font-family: 'Baloo Bhaijaan 2';
+  font-size: 18px;
+  border-radius: 5px;
+}
+.password-submit-btn {
+  font-family: 'Baloo Bhaijaan 2';
+  padding: 5px 13px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: rgb(0, 255, 0);
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.password-submit-btn:hover {
+  background-color: rgb(0, 104, 0);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.514);
+  transform: translateY(-2px);
+  color: white;
+}
+.code-aria-copy {
+  margin: 0;
+  font-size: 17.6445px;
+  font-family: monospace;
+  background-color: rgb(255, 238, 217);
+  text-align: left;
+}
+.margin-0 {
+  margin: 0;
+}
+
+.script-file-btn-1 {
+  display: none;
+}
