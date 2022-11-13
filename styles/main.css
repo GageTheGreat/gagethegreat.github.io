@@ -789,6 +789,9 @@ pre {
   .code-aria {
     font-size: 14px;
   }
+  .docs-section-main {
+    margin: 10px 5%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -800,6 +803,9 @@ pre {
   }
   .code-aria {
     font-size: 13px;
+  }
+  .docs-section-main {
+    margin: 7px 3%;
   }
 }
 
