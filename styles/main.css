@@ -768,6 +768,39 @@ pre {
   .nav-sidebar-menu-btn {
     display: unset !important;
   }
+  * {
+    font-size: 1.15rem;
+  }
+  .nav-page-title-1 {
+    font-size: 24px;
+  }
+  .code-aria {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  * {
+    font-size: 1.1rem;
+  }
+  .nav-page-title-1 {
+    font-size: 24px;
+  }
+  .code-aria {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 1rem;
+  }
+  .nav-page-title-1 {
+    font-size: 24px;
+  }
+  .code-aria {
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 760px) {
