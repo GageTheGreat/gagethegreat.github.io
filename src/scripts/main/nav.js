@@ -1,31 +1,44 @@
-let homeBtn = document.getElementById('home-nav')
-let discordBtn = document.getElementById('discord-nav')
-let hcBtn = document.getElementById('hab1b1-nav')
-let storeBtn = document.getElementById('store-nav')
-let socialsBtn = document.getElementById('socials-nav')
-let docsBtn = document.getElementById('docs-nav')
+const sidebarBTN = document.getElementById("nav-sidebar-manu-btn");
+const parentDocument = window.parent.document;
+const sidebar = parentDocument.getElementById("sidebar-main-1");
+const navPageTitle = document.getElementById("nav-page-title-1")
+sidebar.style.left = "-320px";
 
-homeBtn.addEventListener("click", (e) => {
-  parent.window.location.href = "/"
-}) 
+sidebarBTN.addEventListener("click", (e) => {
+  if (sidebar.style.left === "-320px") {
+    sidebar.style.left = "0";
+    parentDocument.body.style.overflow = "hidden";
+  } else if (sidebar.style.left === "0px") {
+    sidebar.style.left = "-320px";
+    parentDocument.body.style.overflow = "overlay";
+  }
+});
 
-discordBtn.addEventListener("click", (e) => {
-  parent.window.location.href = "/discord"
-})
+document.addEventListener("mousedown", function(e) {
+  if (!sidebar.contains(e.target) && !sidebarBTN.contains(e.target) || parentDocument.contains(e.target)) {
+    sidebar.style.left = "-320px";
+    parentDocument.body.style.overflow = "overlay";
+  }
+});
 
-hcBtn.addEventListener("click", (e) => {
-  parent.window.location.href = "https://hab1b1clan.github.io"
-})
+function checkPage() {
+  var currentPage = window.parent.location.pathname;
+  console.log(currentPage)
+  if (currentPage === "/") {
+    navPageTitle.textContent = "Home"
+  } else if (RegExp("\/discord*").test(currentPage)) {
+    navPageTitle.textContent = "Discord"
+  } else if (RegExp("\/store*").test(currentPage)) {
+    navPageTitle.textContent = "Store"
+  } else if (RegExp("\/socials*").test(currentPage)) {
+    navPageTitle.textContent = "Socials"
+  } else if (RegExp("\/docs*").test(currentPage)) {
+    navPageTitle.textContent = "Docs"
+  } else if (RegExp("\school*").test(currentPage)) {
+    navPageTitle.textContent = "School"
+  } else {
+    navPageTitle.textContent = "Home"
+  }
+}
 
-storeBtn.addEventListener("click", (e) => {
-  parent.window.location.href = "/store"
-})
-
-socialsBtn.addEventListener("click", (e) => {
-  parent.window.location.href = "/socials"
-})
-
-docsBtn.addEventListener("click", (e) => {
-  parent.window.location.href = "/docs"
-})
-
+checkPage()
