@@ -8,6 +8,8 @@ function main() {
   );
   if (cmd === 'exit') {
     exitApp();
+  } else if (cmd === 'help') {
+    /* go to help */
   } else {
     var subcmd = window.prompt(
       "Storage editor. What do you want to change/get: (Type 'help' for help)"
