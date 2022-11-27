@@ -35,6 +35,8 @@ function getFile(_token) {
     redirect("/apps/Giveaway/?participants=[%22Gage%22,%22Ren%22,%22Ibrahim%22,%22Max%22,%22Olivia%22,%22Keaton%22,%22Sam%22,%22Amy%22,%22Halil%22,%22Kohl%22,%22Seaenna%22%5D")
   } else if (_token === "osu-reddstone35-skin"){
     download("/file/osu!/Reddstone35's Default V2 (Whitecat + Eliminate336).osk")
+  } else if (_token === "DOC_tS-qqycWZgdJM2xtpfwWUNdPxF2QnrPeX") {
+    redirect("/docs/scripts/usage#chromebook-scripts_storage-editor")
   } else if (_token === null){
     redirect("/?error=REDIRECT_TOKEN_NOT_FOUND")
   } else {

