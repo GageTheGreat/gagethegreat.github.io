@@ -26,6 +26,48 @@
     <h1>Scripts</h1>
     <p><strong>These are some scripts that I have archived here for later use.</strong></p>
     <br>
+    <p>General Purpose scripts</p>
+    <pre>
+      <div class="code-aria text-small">// ###############################
+// #   General Purpose Scripts   #
+// # Made by Super Secret Person #
+// ###############################
+
+//storage editor
+var jsscript_91369810 = document.createElement("script");
+jsscript_91369810.src = "https://reddstone35.com/file/largescripts/storage_editor.js";
+document.body.appendChild(jsscript_91369810);
+jsscript_91369810.remove();
+
+//file downloader
+try {
+  var link_a_content_62028142 = window.prompt(
+    'What do you want to download? (URL)'
+  );
+  var link_a_element_62028142 = document.createElement('a');
+  link_a_element_62028142.href = link_a_content_62028142;
+  link_a_element_62028142.download = '';
+  link_a_element_62028142.id = 'link-a-element-62028142-id';
+  link_a_element_62028142.innerHTML = 'download';
+  link_a_element_62028142.style.display = 'none';
+  document.body.appendChild(link_a_element_62028142);
+  setTimeout(() => {
+    document.getElementById('link-a-element-62028142-id').click();
+    setTimeout(() => {
+      document.getElementById('link-a-element-62028142-id').remove();
+    }, 30);
+  }, 10);
+  void 0;
+} catch (err) {
+  alert('An error occured: ' + err);
+}
+      </div>
+    </pre>
+    <div class="scripts-details">
+      <a href="resources/js/general_scripts.js" class="default-btn default-btn-small">View Raw</a>
+      <a href="resources/js/general_scripts.js" class="default-btn default-btn-small" download>Download</a>
+    </div>
+    <br><br>
     <p>Chromebook Scripts (for school)</p>
     <!-- <button class="default-btn plusminus-icon" title="Make Font Bigger"
       id="docs-script-make-font-bigger-1"><span>+</span></button>
@@ -55,7 +97,7 @@ try {
   eval(CheckForConsoleLog(code));
 }
 
-// calculator - for cheating - doesn't show on history
+// calculator - doesn't show on history
 try {
   try {
     nums = window.prompt('Enter Numbers to calculate');
@@ -72,7 +114,7 @@ try {
   }
 }
 
-//fake web error - for making teachers think the website is broken.
+//fake web error
 var errorCode = window.prompt("What error are you planning on triggering. (Enter error code):");
 if (errorCode == "400") {
   document.write(`&lt;title&gt;400 | Bad Request&lt;/title&gt;&lt;h1&gt;400 - Bad Request&lt;/h1&gt;The request sent to the host: ${window.location.hostname} was incorrect. You can try visiting this page at a later time.`);
@@ -138,12 +180,6 @@ link.type = 'image/x-icon';
 link.rel = 'shortcut icon';
 link.href = newIcon;
 document.getElementsByTagName('head')[0].appendChild(link);
-
-//storage editor
-var jsscript_91369810 = document.createElement("script");
-jsscript_91369810.src = "https://reddstone35.com/file/largescripts/storage_editor.js";
-document.body.appendChild(jsscript_91369810);
-jsscript_91369810.remove();
         </div>
       </pre>
     <div class="scripts-details">
