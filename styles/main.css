@@ -22,6 +22,52 @@
   }
 }
 
+@keyframes glow-rainbow-background {
+  00% {
+    background: red !important;
+  }
+
+  10% {
+    background: darkorange !important;
+  }
+
+  20% {
+    background: yellow !important;
+  }
+
+  30% {
+    background: lime !important;
+  }
+
+  40% {
+    background: green !important;
+  }
+
+  50% {
+    background: rgb(0, 230, 153) !important;
+  }
+
+  60% {
+    background: aqua !important;
+  }
+
+  70% {
+    background: blue !important;
+  }
+
+  80% {
+    background: rgb(77, 0, 128) !important;
+  }
+
+  90% {
+    background: rgb(204, 0, 255) !important;
+  }
+
+  100% {
+    background: red !important;
+  }
+}
+
 @keyframes glow-rainbow {
   00% {
     color: red;
@@ -67,6 +113,8 @@
     color: red;
   }
 }
+
+
 
 :root {
   --brand-color: #ff8000;
@@ -175,6 +223,7 @@ header {
   width: 100%;
   box-shadow: 0px 0px 20px 0px;
 }
+
 
 .main-navagation-bar-all {
   position: relative;

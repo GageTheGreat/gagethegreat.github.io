@@ -1,0 +1,49 @@
+@keyframes rainbow {
+  00% {
+    background-color: red;
+  }
+
+  15% {
+    background-color: darkorange;
+  }
+
+  30% {
+    background-color: yellow;
+  }
+
+  45% {
+    background-color: lime;
+  }
+
+  /* 40% {
+    background-color: rgb(0, 255, 136);
+  } */
+
+  /* 50% {
+    background-color: rgb(0, 230, 153);
+  } */
+
+  55% {
+    background-color: aqua;
+  }
+
+  75% {
+    background-color: blue;
+  }
+
+  /* 80% {
+    background-color: rgb(153, 0, 255);
+  } */
+
+  87% {
+    background-color: rgb(204, 0, 255);
+  }
+
+  100% {
+    background-color: red;
+  }
+}
+
+body {
+  animation: rainbow linear 7s infinite;
+}
