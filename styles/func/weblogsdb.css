@@ -1,0 +1,44 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  /* 50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  } */
+}
+
+.loading-circle {
+  width: 100px;
+  animation: spin infinite linear;
+  animation-duration: 1.5s;
+  margin-right: 40px;
+  user-select: none;
+  background-color: none;
+  -webkit-user-drag: none;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.img-outline {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 5px solid rgb(207, 207, 207);
+}
