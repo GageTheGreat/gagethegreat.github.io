@@ -1,4 +1,9 @@
-const msg = new URLSearchParams(window.location.search).get("msg");
+const msg = new URLSearchParams(window.location.search).get("q");
+const shMode = new URLSearchParams(window.location.search).get("sh");
+
+if (shMode === "1") {
+  document.getElementById("main-container").style.display = "flex";
+}
 
 var userIP = fetch('https://api.ipify.org/').then(function(response) {
   return response.text();
@@ -10,17 +15,20 @@ var userIP = fetch('https://api.ipify.org/').then(function(response) {
 function sendMSG() {
   document.getElementById("loading").innerText = `Sending request to https://discord.com/...`;
   var doSend = true;
-  var noerr = true
+  var noerr = true;
   setTimeout(() => {
     if (msg === null || msg === undefined|| msg === "" || msg === " " || msg === " ".repeat(msg.length)) {
       doSend = false;
       document.getElementById("img-container").style.display = "none";
       document.getElementById("loading").style.color = "red";
-      document.getElementById("loading").innerHTML = "Message cannot be blank. <a href=\"javascript:window.history.back();window.close()\">Close</a>"
+      document.getElementById("loading").innerHTML = "Message cannot be blank. <a href=\"javascript:window.history.back();window.close()\">Close</a>";
+      if (shMode !== "1") {
+        window.history.back();
+        window.close();
+      }
     }
   }, 300);
   var sentMSG = `Sent from \`${userIP}\`. Message: ${msg}`;
-  console.log(doSend);
   setTimeout(() => {
     if (doSend === true) {
       try {
@@ -66,6 +74,7 @@ function sendMSG() {
   setTimeout(() => {
     if (noerr === true) {
       document.getElementById("img-container").style.display = "none";
+      document.getElementById("loading").style.display = "unset";
       document.getElementById("loading").style.color = "red";
       document.getElementById("loading").innerHTML = "=Timed out! Try again later. <a href='javascript:window.location.reload()'>Reload</a>";
     }
