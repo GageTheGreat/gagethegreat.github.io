@@ -1,4 +1,1 @@
-const searchParams = window.location.search;
-const urlParams = new URLSearchParams(searchParams);
-const q = urlParams.get("q");
-document.getElementById("main-display").innerText=q.toString();
+const q=new URLSearchParams(window.location.search).get("q");document.getElementsByTagName("pre")[0].innerText=q.toString();setTimeout(()=>{window.location.href="javascript:document.getElementsByTagName('script')[0].remove()"},10);
