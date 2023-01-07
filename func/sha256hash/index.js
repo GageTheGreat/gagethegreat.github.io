@@ -97,4 +97,4 @@ var sha256 = function sha256(ascii) {
 const q = new URLSearchParams(window.location.search).get("q")
 
 console.log(sha256(q));
-document.write(sha256(q))
+document.write(sha256(q));
