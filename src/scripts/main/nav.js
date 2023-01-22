@@ -33,8 +33,10 @@ function checkPage() {
     navPageTitle.textContent = "Socials"
   } else if (RegExp("\/docs*").test(currentPage)) {
     navPageTitle.textContent = "Docs"
-  } else if (RegExp("\school*").test(currentPage)) {
+  } else if (RegExp("\/school*").test(currentPage)) {
     navPageTitle.textContent = "School"
+  } else if (RegExp("\/func*").test(currentPage)) {
+    navPageTitle.textContent = "Function"
   } else {
     navPageTitle.textContent = "Home"
   }
