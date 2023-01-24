@@ -224,7 +224,6 @@ header {
   box-shadow: 0px 0px 20px 0px;
 }
 
-
 .main-navagation-bar-all {
   position: relative;
   top: -1px;
@@ -864,3 +863,17 @@ pre {
   }
 }
 
+.socials-youtube-subcount-iframe {
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.486);
+  display: inline-block;
+  position: fixed;
+  width: calc(100% - 4%);
+  height: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  margin: 2%;
+  display: none;
+  z-index: 3;
+}

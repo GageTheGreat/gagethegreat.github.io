@@ -2,6 +2,8 @@ const key = 'AIzaSyBvq4st9BGVbJn3tFG03Ioy1G9K6yqfFzo';
 let selectedChannelYT = sessionStorage.getItem('selectedChannel');
 const subButtonYT = document.getElementById('social-yt-subscribe-btn');
 const viewButtonYT = document.getElementById('social-yt-viewchannel-btn');
+const viewSubCountBTN = document.getElementById('social-yt-viewsubs-btn');
+const subCountLarge = document.getElementById('socials-youtube-subcount-iframe')
 const videoMiniplayerYT = document.getElementById(
   'youtube-video-mostrecent-miniplayer'
 );
@@ -85,3 +87,9 @@ document
     loadChannel('reddstone35coding');
     sessionStorage.setItem('selectedChannel', 'reddstone35coding');
   });
+
+
+
+viewSubCountBTN.addEventListener("click", (e) => {
+  subCountLarge.style.display = "inline-block";
+});

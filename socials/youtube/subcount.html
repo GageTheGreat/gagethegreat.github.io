@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <title>Youtube Subcount</title>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Chewy&family=Coda&family=Comfortaa&family=Dongle:wght@300&family=Righteous&family=Supermercado+One&display=swap');
+    .subcount-body {
+      display: inline-block;
+      position: absolute;
+      background: #ff0000;
+      color: white;
+      font-family: 'Baloo Bhaijaan 2';
+      font-size: calc(7vw + 7vh);
+      /* border: 1px solid black; */
+      left: 50%;
+      top: 50%;
+      padding: 20px 14% 0 14%;
+      border-radius: 20px;
+      transform: translate(-50%, -50%);
+    }
+    #close-iframe-btn {
+      font-size: calc(2vw + 2vh + 20px) !important;
+    }
+    #refresh-iframe-btn {
+      font-size: calc(2vw + 2vh + 20px) !important;
+    }
+    .btn-cont {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      right: 0;
+    }
+    .btn {
+      cursor: pointer;
+      user-select: none;
+      background: none;
+      border: none;
+      transition-duration: 0.2s;
+    }
+    .btn:hover {
+      color: white;
+    }
+    body, span { 
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      overflow: hidden;
+    }
+  </style>
+  <body class="subcount-body"> 
+    <span><span id="socials-yt-subCount">23</span>&nbsp;Subs</span>
+    <div class="btn-cont">
+      <button id="refresh-iframe-btn" class="material-symbols-outlined btn">Refresh</button>
+      <button id="close-iframe-btn" class="material-symbols-outlined btn">close</button>
+    </div>
+  </body>
+  <script src="/src/scripts/socials/yt.js"></script>
+  <script src="/src/scripts/socials/yt-subcount-iframe.js"></script>
+</html>
