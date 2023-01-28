@@ -877,3 +877,71 @@ pre {
   display: none;
   z-index: 3;
 }
+
+.modem {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #1a1a1a !important;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  z-index: 3;
+  margin: 0;
+  display: none;
+  box-shadow: 0 0 10px 0 black;
+}
+
+.modem .modem-close {
+  background: none;
+  border: none;
+  font-size: 35px;
+  position: absolute;
+  right: 0px;
+  top: -10px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+.modem .modem-close:hover {
+  color: rgb(82, 82, 82);
+}
+
+.modem .modem-button {
+  background-color: #646464 !important;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 5px 20px;
+  cursor: pointer;
+  color: white;
+  z-index: 10 ;
+  transition: 0.2s ease;
+}
+
+.modem .modem-button:hover {
+  color: black;
+  box-shadow: 0 0 0 5px #b3b3b3;
+  background-color: #969696 !important;
+}
+
+.modem p {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modem-dim {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: none;
+}

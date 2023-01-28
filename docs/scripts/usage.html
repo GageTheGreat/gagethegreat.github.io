@@ -8,6 +8,16 @@
     <title>Scripts - Usage</title>
   </head>
   <body>
+    <div class="modem-container">
+      <div id="modem" class="modem">
+        <div>
+          <button class="modem-close" id="modem-close">×</button>
+          <p id="modem-text">text</p>
+          <button id="modem-button" class="modem-button">button</button>
+        </div>
+      </div>
+    </div>
+    <div id="modem-dim" class="modem-dim"></div>
     <iframe src="/navbar.html" frameborder="0" class="fixed-relatively main-header"></iframe>
     <iframe src="/sidebar.html" frameborder="0" class="sidebar-iframe-1" id="sidebar-main-1"></iframe>
     <section class="section-main-undernav text-align">
@@ -21,5 +31,6 @@
       <p>Commands:<br><b>'help' - gives you a help message<br>'get' - returns items of an item type<br>'edit' - edits an item<br>'del' - deletes an item<br>'create' - creates an item<br>'exit' - exits the app</b></p>
       <p>Object types:<br><b>'cookie' - returns site cookies<br>'local' - returns localStorage items<br>'session' - returns sessionStorage items</b></p>
     </section>
+    <script src="/src/scripts/main/index.js"></script>
   </body>
 </html>
