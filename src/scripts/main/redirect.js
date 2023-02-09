@@ -1,6 +1,10 @@
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const redirToken = urlParams.get('token');
+// const queryString = window.location.search;
+// const urlParams = new URLSearchParams(queryString);
+// const redirToken = urlParams.get('token');
+
+var redirToken = window.location.search.slice(1)
+
+console.log(redirToken)
 
 function redirect(_href) {
   window.location = _href;
@@ -37,10 +41,46 @@ function getFile(_token) {
     download("/file/osu!/Reddstone35's Default V2 (Whitecat + Eliminate336).osk")
   } else if (_token === "DOC_tS-qqycWZgdJM2xtpfwWUNdPxF2QnrPeX") {
     redirect("/docs/scripts/usage#chromebook-scripts_storage-editor")
-  } else if (_token === null){
-    redirect("/?error=REDIRECT_TOKEN_NOT_FOUND")
+  } else if (_token === "youtube"){
+    redirect("https://youtube.com/@GageTheGreat0")
+  } else if (_token === "twitch"){
+    redirect("https://twitch.tv/reddstone35")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
   } else {
-    redirect("/?error=REDIRECT_UNKOWN_TOKEN")
+    redirect("/")
   }
 }
 
