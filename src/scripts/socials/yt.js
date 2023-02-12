@@ -24,15 +24,15 @@ let getSubscribers = (user) => {
 };
 
 function loadChannel(channelName) {
-  if (channelName === 'reddstone35') {
+  if (channelName === 'GageTheGreat') {
     getSubscribers('UC0ouJNIXzJEvtOCW7K7WoOw');
     subButtonYT.setAttribute(
       'href',
-      'https://www.youtube.com/channel/UC0ouJNIXzJEvtOCW7K7WoOw?sub_confirmation=1'
+      'https://www.youtube.com/@GageTheGreat0?sub_confirmation=1'
     );
     viewButtonYT.setAttribute(
       'href',
-      'https://www.youtube.com/channel/UC0ouJNIXzJEvtOCW7K7WoOw'
+      'https://www.youtube.com/@GageTheGreat0'
     );
     videoMiniplayerYT.setAttribute(
       'src',
@@ -44,7 +44,7 @@ function loadChannel(channelName) {
     document.getElementById(
       'reddstone35-channel-viewstats'
     ).style.backgroundColor = 'rgba(0, 0, 0, 0.225)';
-  } else if (channelName === 'reddstone35coding') {
+  } else if (channelName === 'reddstone35coding_old_6ab180d3c092d8a316d7709eb02281fd4b1f241d90b45fe6435dda9d7f7dbf3f8cfc22343cd5b43b5091ae4f11000c5af97f') {
     getSubscribers('UCVmxCH9EAokXX5b9YiNHOwQ');
     subButtonYT.setAttribute(
       'href',
@@ -61,13 +61,15 @@ function loadChannel(channelName) {
     document.getElementById(
       'reddstone35coding-channel-viewstats'
     ).style.backgroundColor = 'rgba(0, 0, 0, 0.225)';
+  } else {
+    void 0;
   }
 }
 
 window.onload = function () {
   if (selectedChannelYT === null) {
-    sessionStorage.setItem('selectedChannel', 'reddstone35');
-    loadChannel('reddstone35');
+    sessionStorage.setItem('selectedChannel', 'GageTheGreat');
+    loadChannel('GageTheGreat');
   } else {
     loadChannel(selectedChannelYT);
   }
@@ -78,14 +80,14 @@ getSubscribers('UC0ouJNIXzJEvtOCW7K7WoOw', 'socials-yt-subCount-reddstone35');
 document
   .getElementById('reddstone35-channel-viewstats')
   .addEventListener('click', () => {
-    loadChannel('reddstone35');
-    sessionStorage.setItem('selectedChannel', 'reddstone35');
+    loadChannel('GageTheGreat');
+    sessionStorage.setItem('selectedChannel', 'GageTheGreat');
   });
 document
   .getElementById('reddstone35coding-channel-viewstats')
   .addEventListener('click', () => {
-    loadChannel('reddstone35coding');
-    sessionStorage.setItem('selectedChannel', 'reddstone35coding');
+    loadChannel('GageTheGreat');
+    sessionStorage.setItem('selectedChannel', 'GageTheGreat');
   });
 
 

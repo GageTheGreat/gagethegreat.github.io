@@ -520,6 +520,10 @@ pre {
   background-color: rgba(214, 214, 214, 0.425);
 }
 
+.socials-yt-channel-card:disabled {
+  cursor: not-allowed;
+}
+
 .socials-yt-channel-card:nth-child(1) {
   border-radius: 100px 100px 0px 0px;
   border-bottom: 1px solid black;
@@ -531,7 +535,7 @@ pre {
 }
 
 .socials-yt-channel-card:hover {
-  background-color: rgba(161, 161, 161, 0.425);
+  background-color: rgba(255, 255, 255, 0.212);
 }
 
 .socials-yt-channel-card img {
@@ -803,7 +807,7 @@ pre {
   box-shadow: 0px 0px 15px 0px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 950px) {
   .header-responsive-1 a {
     display: none;
   }
