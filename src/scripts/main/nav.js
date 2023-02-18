@@ -10,14 +10,26 @@ sidebarBTN.addEventListener("click", (e) => {
     parentDocument.body.style.overflow = "hidden";
   } else if (sidebar.style.left === "0px") {
     sidebar.style.left = "-340px";
-    parentDocument.body.style.overflow = "overlay";
+    parentDocument.body.style.overflow = "auto";
   }
 });
 
-document.addEventListener("mousedown", function(e) {
-  if (!sidebar.contains(e.target) && !sidebarBTN.contains(e.target) || parentDocument.contains(e.target)) {
+parentDocument.addEventListener("mousedown", function(e) {
+  console.log(parentDocument.getElementsByTagName("html")[0].contains(e.target))
+  if (!sidebar.contains(e.target) && !sidebarBTN.contains(e.target) || parentDocument.getElementsByTagName("html")[0].contains(e.target)) {
+    
     sidebar.style.left = "-340px";
-    parentDocument.body.style.overflow = "overlay";
+    parentDocument.body.style.overflow = "auto";
+  }
+});
+
+
+document.addEventListener("mousedown", function(e) {
+  console.log(parentDocument.getElementsByTagName("html")[0].contains(e.target))
+  if (!sidebar.contains(e.target) && !sidebarBTN.contains(e.target) || parentDocument.getElementsByTagName("html")[0].contains(e.target)) {
+    
+    sidebar.style.left = "-340px";
+    parentDocument.body.style.overflow = "auto";
   }
 });
 
@@ -37,9 +49,14 @@ function checkPage() {
     navPageTitle.textContent = "School"
   } else if (RegExp("\/func*").test(currentPage)) {
     navPageTitle.textContent = "Function"
+  } else if (RegExp("\/games*").test(currentPage)) {
+    navPageTitle.textContent = "Games"
+  } else if (RegExp("\/placeholder").test(currentPage)) {
+    navPageTitle.textContent = "Other"
   } else {
-    navPageTitle.textContent = "Home"
+    navPageTitle.textContent = "Other"
   }
 }
 
 checkPage()
+
