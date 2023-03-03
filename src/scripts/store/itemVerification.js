@@ -4,12 +4,13 @@ const product = urlParams.get('product');
 const generalitem = urlParams.get('mp'); 
 const productversion = urlParams.get('pv');
 const tytext = urlParams.get('ty_t');
+const ty_t_span = document.getElementById("ty-mainthankstext_id")
 
 
 var productpath = `${location.protocol}//${location.host}/file/download/programs/${generalitem}/${product}`
 
-var validmps = ["MoneySystem"]
-var validty_t = ["Money System"]
+var validmps = ["MoneySystem", "PLS-DONATE-Score-Calculator"]
+var validty_t = ["Money System", "PLS DONATE Score Calculator"]
 var invalidpvchars = ['/','<','>','$','^','&','%','@','!']
 
 var request;
@@ -39,8 +40,9 @@ for (var i = 0; i < productversion.length; i++) {
 }
 
 
-document.write(`<p class=\"ty-mainthankstext\">Thank you for downloading ${tytext} ${productversion} </p>`);
+ty_t_span.textContent = `Thank you for downloading ${tytext} ${productversion}`
 
-document.write("<a href=\"javascript:history.back()\" class=\"ty-returntostore\">Return To Store</a>");
+setTimeout(() => {
+  window.location.href = productpath;
+}, 1000);
 
-window.location.href = productpath;
