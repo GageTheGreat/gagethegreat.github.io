@@ -51,7 +51,7 @@ function checkPage() {
     navPageTitle.textContent = "Function"
   } else if (RegExp("\/games*").test(currentPage)) {
     navPageTitle.textContent = "Games"
-  } else if (RegExp("\/placeholder").test(currentPage)) {
+  } else if (RegExp("\/placeholder*").test(currentPage)) {
     navPageTitle.textContent = "Other"
   } else {
     navPageTitle.textContent = "Other"
