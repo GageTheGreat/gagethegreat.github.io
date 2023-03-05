@@ -28,15 +28,15 @@ function loadChannel(channelName) {
     getSubscribers('UC0ouJNIXzJEvtOCW7K7WoOw');
     subButtonYT.setAttribute(
       'href',
-      'https://www.youtube.com/@GageTheGreat0?sub_confirmation=1'
+      'https://www.youtube.com/@GageTheGreatYT?sub_confirmation=1'
     );
     viewButtonYT.setAttribute(
       'href',
-      'https://www.youtube.com/@GageTheGreat0'
+      'https://www.youtube.com/@GageTheGreatYT'
     );
     videoMiniplayerYT.setAttribute(
       'src',
-      'https://www.youtube.com/embed/_K4EdOAA_aE'
+      'https://www.youtube.com/embed/2a4scTLNoQs'
     );
     document.getElementById(
       'reddstone35coding-channel-viewstats'
