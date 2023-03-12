@@ -3,7 +3,7 @@ body {
   background-color: rgb(255, 238, 217);;
   font-family: 'Baloo Bhaijaan 2';
   text-align: center;
-  overflow:hidden;
+  overflow-y: scroll;
 }
 h1,
 h2,
