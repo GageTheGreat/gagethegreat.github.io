@@ -1,9 +1,12 @@
-var jsInjectorAcive_08039707890820649443200666552125 = undefined;
+if (!jsInjectorAcive_08039707890820649443200666552125) {
+  var jsInjectorAcive_08039707890820649443200666552125 = undefined;
+}
+
 function createBaseGUI() {
   var jsInjectContainerWrapper_57865339127734920168055788445180 =
     document.createElement('div');
   jsInjectContainerWrapper_57865339127734920168055788445180.innerHTML =
-    '<div id="17c40bbff3ccfd961bfb36c373780e7809f3e80fed9e8426a9" class="js-inject-container-17c40bbff3ccfd961bfb36c373780e7809f3e80fed9e8426a9"><span id="0b441dd654791030037b99da455574e88adf347bb398571f2c" class="js-inject-title-0b441dd654791030037b99da455574e88adf347bb398571f2c">Js Injector <button id="88c407d576161b00b56274ecc91203c1d30c047459b53501d3" class="js-inject-close-btn-88c407d576161b00b56274ecc91203c1d30c047459b53501d3">&times;</button></span><hr><input type="text" id="b8360f0481e091b876e0f5c56fdaaede537ca961e0101ef514" class="js-inject-input-b8360f0481e091b876e0f5c56fdaaede537ca961e0101ef514"></input><div id="5e99459b21f94e900fb00f5b391544fe7c4bd62b0ff97e3733" class="js-inject-output-5e99459b21f94e900fb00f5b391544fe7c4bd62b0ff97e3733"></div></div>';
+    '<div id="17c40bbff3ccfd961bfb36c373780e7809f3e80fed9e8426a9" class="js-inject-container-17c40bbff3ccfd961bfb36c373780e7809f3e80fed9e8426a9"><span id="0b441dd654791030037b99da455574e88adf347bb398571f2c" class="js-inject-title-0b441dd654791030037b99da455574e88adf347bb398571f2c">Js Injector<button id="88c407d576161b00b56274ecc91203c1d30c047459b53501d3" class="js-inject-close-btn-88c407d576161b00b56274ecc91203c1d30c047459b53501d3">&times;</button> <button id="5907b8ea595cd1943cf50b64432056e327ad3593eccb8bb381" class="js-inject-clear-btn-5907b8ea595cd1943cf50b64432056e327ad3593eccb8bb381">Clear</button></span><hr><input type="text" id="b8360f0481e091b876e0f5c56fdaaede537ca961e0101ef514" class="js-inject-input-b8360f0481e091b876e0f5c56fdaaede537ca961e0101ef514"></input><div id="5e99459b21f94e900fb00f5b391544fe7c4bd62b0ff97e3733" class="js-inject-output-5e99459b21f94e900fb00f5b391544fe7c4bd62b0ff97e3733"></div><div class=js-inject-footer-cdbb01b91c0324ef9c4dc327db764383ce1d2cdf320080c5ca>JS Injector may not work on some websites, use bookmarks instead.</div></div>';
   var jsInjectContainer_75356435359544638236638425369034 =
     jsInjectContainerWrapper_57865339127734920168055788445180.firstChild;
   document.body.appendChild(jsInjectContainer_75356435359544638236638425369034);
@@ -16,12 +19,13 @@ function createStyles() {
   position: fixed;
   background-color: #212121;
   width: 400px;
-  height: 500px;
+  height: 520px;
   z-index: 99999999;
   font-size: 18px;
   top: 50px;
   left: 50px;
   border-radius: 10px;
+  opacity: 0.97;
 }
   
 .js-inject-input-b8360f0481e091b876e0f5c56fdaaede537ca961e0101ef514 {
@@ -40,6 +44,7 @@ function createStyles() {
   overflow-y: scroll;
   height: 400px;
   max-height: 400px;
+  text-align: center;
 }
 
 .js-inject-title-0b441dd654791030037b99da455574e88adf347bb398571f2c {
@@ -47,19 +52,43 @@ function createStyles() {
   user-select: none;
   color: white;
   width: 100% !important;
+  text-align: center;
+}
+
+.js-inject-clear-btn-5907b8ea595cd1943cf50b64432056e327ad3593eccb8bb381 {
+  position: relative;
+  float: right;
+  margin-right: 5px;
+  color: white;
+  background: red;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px
 }
 
 .js-inject-close-btn-88c407d576161b00b56274ecc91203c1d30c047459b53501d3 {
   position: relative;
   float: right;
-  margin-right: 5px;
+  margin-right: 10px;
   color: white;
   background: none;
   outline: none;
   border: none;
   border-radius: 3px;
   font-size: 20px;
+  cursor: pointer;
 }
+
+.js-inject-footer-cdbb01b91c0324ef9c4dc327db764383ce1d2cdf320080c5ca {
+  font-size: 12px;
+  color: red;
+  text-align: center;
+}
+
+
 
 hr {
   margin-bottom: 10.5px;
@@ -148,6 +177,7 @@ if (jsInjectorAcive_08039707890820649443200666552125 !== true) {
     document.getElementById(
       'b8360f0481e091b876e0f5c56fdaaede537ca961e0101ef514'
     );
+  var jsInjectorClearBTN_77247583342074032935042079504903 = document.getElementById('5907b8ea595cd1943cf50b64432056e327ad3593eccb8bb381');
 } else {
   alert('There is already an injector open');
 }
@@ -175,9 +205,17 @@ jsInjectorContainer_64786484469046696970675278094207.addEventListener(
       } catch (err) {
         jsInjectorEvalOutput_72560528591680096720150206666922 = err;
       }
+      jsInjectorInput_03756783560045408806544475020075.value = "";
       jsInjectorOutput_68704770033699734932136330504246.innerText +=
         '\n' + jsInjectorEvalOutput_72560528591680096720150206666922;
     }
+  }
+);
+
+jsInjectorClearBTN_77247583342074032935042079504903.addEventListener(
+  'click',
+  () => {
+    jsInjectorOutput_68704770033699734932136330504246.innerText = ""
   }
 );
 
