@@ -45,8 +45,8 @@ function getFile(_token) {
     redirect("https://youtube.com/@GageTheGreat0")
   } else if (_token === "twitch"){
     redirect("https://twitch.tv/reddstone35")
-  } else if (_token === ""){
-    redirect("/")
+  } else if (_token === "62cf23384f2dba154e02fe02aa8a116b50fa471eb68ac383021ca6d89cf3cb8f"){
+    redirect("/school/cheats/blooket-25302-noadyn-real-hex8F8F8F")
   } else if (_token === ""){
     redirect("/")
   } else if (_token === ""){
