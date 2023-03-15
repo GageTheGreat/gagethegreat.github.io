@@ -79,6 +79,26 @@ function getFile(_token) {
     redirect("/")
   } else if (_token === ""){
     redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
+  } else if (_token === ""){
+    redirect("/")
   } else {
     redirect("/")
   }
