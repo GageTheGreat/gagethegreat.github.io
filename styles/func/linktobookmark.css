@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Chewy&family=Coda&family=Comfortaa&family=Dongle:wght@300&family=Righteous&family=Supermercado+One&display=swap');
+
+html {
+  background-color: #000011;
+}
+
+* {
+  font-size: 24px;
+  font-family: comfortaa
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+input[type="text"] {
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  padding: 10px;
+  transition-duration: 0.2s;
+}
+
+a {
+  color: aquamarine;
+}
+
+p {
+  font-size: 10px;
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+button {
+  padding: 10px;
+  border: 2px solid transparent;
+  background-color: white;
+  border-radius:8px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  border-color: gray;
+}
+
+input:focus {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  border-color: gray;
+}
