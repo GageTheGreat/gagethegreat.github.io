@@ -19,88 +19,67 @@ function download(fileUrl) {
 }
 
 function getFile(_token) {
-  if (_token === "PlumTOS-YLi3M8Q4TXbe") {
-    redirect("https://docs.google.com/document/d/1c0XF0HsGfmcMwNNdo5M1dJYgLZIft-yWYYiAA6RMPZo/view")
-  } else if (_token === "DOC_tS-UMKsPfiftRcjYTEFpP5tyF34FhAwiv") {
-    redirect("/docs/scripts/usage#chromebook-scripts_fake-error")
-  } else if (_token === "img_d_pfp-red") {
-    download("/file/images/red_pfp.png")
-  } else if (_token === "img_d_pfp-orange") {
-    download("/file/images/orange_pfp.png")
-  } else if (_token === "img_d_pfp-yellow") {
-    download("/file/images/yellow_pfp.png")
-  } else if (_token === "img_d_pfp-green") {
-    download("/file/images/green_pfp.png")
-  } else if (_token === "img_d_pfp-blue") {
-    download("/file/images/blue_pfp.png")
-  } else if (_token === "img_d_pfp-purple") {
-    download("/file/images/purple_pfp.png")
-  } else if (_token === "giveaway-najdrpdn") {
-    redirect("/apps/Giveaway/?participants=[%22Gage%22,%22Ren%22,%22Ibrahim%22,%22Max%22,%22Olivia%22,%22Keaton%22,%22Sam%22,%22Amy%22,%22Halil%22,%22Kohl%22,%22Seaenna%22%5D")
-  } else if (_token === "osu-reddstone35-skin"){
-    download("/file/osu!/Reddstone35's Default V2 (Whitecat + Eliminate336).osk")
-  } else if (_token === "DOC_tS-qqycWZgdJM2xtpfwWUNdPxF2QnrPeX") {
-    redirect("/docs/scripts/usage#chromebook-scripts_storage-editor")
-  } else if (_token === "youtube"){
-    redirect("https://youtube.com/@GageTheGreat0")
-  } else if (_token === "twitch"){
-    redirect("https://twitch.tv/reddstone35")
-  } else if (_token === "62cf23384f2dba154e02fe02aa8a116b50fa471eb68ac383021ca6d89cf3cb8f"){
-    redirect("/school/cheats/blooket-25302-noadyn-real-hex8F8F8F")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else if (_token === ""){
-    redirect("/")
-  } else {
-    redirect("/")
+  switch(_token) {
+    case "PlumTOS-YLi3M8Q4TXbe":
+      redirect("https://docs.google.com/document/d/1c0XF0HsGfmcMwNNdo5M1dJYgLZIft-yWYYiAA6RMPZo/view")
+      break;
+
+    case "DOC_tS-UMKsPfiftRcjYTEFpP5tyF34FhAwiv":
+      redirect("/docs/scripts/usage#chromebook-scripts_fake-error")
+      break;
+
+    case "img_d_pfp-red":
+      download("/file/images/red_pfp.png")
+      break;
+
+    case "img_d_pfp-orange":
+      download("/file/images/orange_pfp.png")
+      break;
+
+    case "img_d_pfp-yellow":
+      download("/file/images/yellow_pfp.png")
+      break;
+
+    case "img_d_pfp-green":
+      download("/file/images/green_pfp.png")
+      break;
+
+    case "img_d_pfp-blue":
+      download("/file/images/blue_pfp.png")
+      break;
+
+    case "img_d_pfp-purple":
+      download("/file/images/purple_pfp.png")
+      break;
+
+    case "giveaway-najdrpdn":
+      redirect("/apps/Giveaway/?participants=[%22Gage%22,%22Ren%22,%22Ibrahim%22,%22Max%22,%22Olivia%22,%22Keaton%22,%22Sam%22,%22Amy%22,%22Halil%22,%22Kohl%22,%22Seaenna%22%5D")
+      break;
+
+    case "osu-reddstone35-skin":
+      download("/file/osu!/Reddstone35's Default V2 (Whitecat + Eliminate336).osk")
+      break;
+
+    case "DOC_tS-qqycWZgdJM2xtpfwWUNdPxF2QnrPeX":
+      redirect("/docs/scripts/usage#chromebook-scripts_storage-editor")
+      break;
+
+    case "youtube":
+      redirect("https://youtube.com/@GageTheGreatYT")
+      break;
+
+    case "twitch":
+      redirect("https://twitch.tv/reddstone35")
+      break;
+
+    case "62cf23384f2dba154e02fe02aa8a116b50fa471eb68ac383021ca6d89cf3cb8f":
+      redirect("/school/cheats/blooket-25302-noadyn-real-hex8F8F8F")
+      break;
+
+    default:
+      redirect("/")
+      break;
+
   }
 }
 
