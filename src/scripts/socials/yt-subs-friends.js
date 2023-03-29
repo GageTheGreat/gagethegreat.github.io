@@ -1,4 +1,6 @@
 const key = 'AIzaSyBvq4st9BGVbJn3tFG03Ioy1G9K6yqfFzo';
+var firstTimeLoaded = false
+
 
 var _data
 
@@ -8,6 +10,12 @@ var aidenSubs
 var renSubs
 var zavierSubs
 
+var gageCount = 0
+var justiceCount = 0
+var renCount = 0
+var aidenCount = 0
+var zavierCount = 0
+
 var gageSubsDOM = document.getElementById("yt-gage-subs")
 var justiceSubsDOM = document.getElementById("yt-justice-subs")
 var aidenSubsDOM = document.getElementById("yt-aiden-subs")
@@ -15,12 +23,57 @@ var renSubsDOM = document.getElementById("yt-ren-subs")
 var zavierSubsDOM = document.getElementById("yt-zavier-subs")
 
 function loadDOM() {
-  gageSubsDOM.innerText = gageSubs;
-  justiceSubsDOM.innerText = justiceSubs;
-  renSubsDOM.innerText = renSubs;
-  aidenSubsDOM.innerText = aidenSubs;
-  zavierSubsDOM.innerText = zavierSubs;
+  if (!firstTimeLoaded) {
+    setInterval(() => {
+      if (gageCount <= Number(gageSubs)) {
+        gageSubsDOM.innerText = String(Number(gageCount).toLocaleString("en-US"))
+        gageCount += 1
+      }
+    }, 1000 / gageSubs);
+    setInterval(() => {
+      if (justiceCount <= Number(justiceSubs)) {
+        justiceSubsDOM.innerText = String(Number(justiceCount).toLocaleString("en-US"))
+        justiceCount += 1
+      }
+    }, 1000 / justiceSubs);
+    setInterval(() => {
+      if (renCount <= Number(renSubs)) {
+        renSubsDOM.innerText = String(Number(renCount).toLocaleString("en-US"))
+        renCount += 1
+      }
+    }, 2000 / gageSubs);
+    setInterval(() => {
+      if (aidenCount <= Number(aidenSubs)) {
+        aidenSubsDOM.innerText = String(Number(aidenCount).toLocaleString("en-US"))
+        aidenCount += 1
+      }
+    }, 1000 / aidenSubs);
+    setInterval(() => {
+      if (zavierCount <= Number(zavierSubs)) {
+        zavierSubsDOM.innerText = String(Number(zavierCount).toLocaleString("en-US"))
+        zavierCount += 1
+      }
+    }, 300 / zavierSubs);
+
+    firstTimeLoaded = true
+
+    setInterval(() => {
+      loadSubs()
+      setTimeout(() => {
+        loadDOM()
+      }, 2000);
+    }, 30000);
+  } else {
+    gageSubsDOM.innerText = String(Number(gageSubs).toLocaleString("en-US"))
+    justiceSubsDOM.innerText = String(Number(justiceSubs).toLocaleString("en-US"))
+    renSubsDOM.innerText = String(Number(renSubs).toLocaleString("en-US"))
+    aidenSubsDOM.innerText = String(Number(aidenSubs).toLocaleString("en-US"))
+    zavierSubsDOM.innerText = String(Number(zavierSubs).toLocaleString("en-US"))
+  }
+
 }
+
+
 
 function loadSubs() {
   getSubscribers("UCD349e-a-kPvixl31RI8-lg")
@@ -28,8 +81,6 @@ function loadSubs() {
   getSubscribers("UCUDhyCHd6uzfDLxTfhT4CLQ")
   getSubscribers("UCn3c2g8wSZFICx5JMx9HOgw")
   getSubscribers("UCHxc8yzwrcWEuGnXSOvDMGg")
-
-
 }
 
 function getSubscribers(user) {
@@ -41,9 +92,7 @@ function getSubscribers(user) {
         return response.json();
       })
       .then((data) => {
-        console.log(data)
         _data = data['items'][0].statistics.subscriberCount;
-        console.log(user + " " + _data)
         switch(user) {
           case "UCD349e-a-kPvixl31RI8-lg":
             justiceSubs = Number(_data).toLocaleString("en-US")
