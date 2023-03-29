@@ -115,7 +115,6 @@
 }
 
 
-
 :root {
   --brand-color: #ff8000;
   --bg-gradient: radial-gradient(ellipse at bottom right, #af00ff, #df00ff, #ff00a5, #ff0000, var(--brand-color), #ffbb00, #ffee00)
@@ -948,4 +947,36 @@ pre {
   top: 0;
   left: 0;
   display: none;
+}
+
+.yt-subs-friends-container {
+  margin-top: 12%;
+  margin-bottom: 12%;
+}
+
+.yt-subs-card-img {
+  border-radius: 50%;
+  user-select: none;
+}
+
+.yt-subs-card {
+  display: inline-block;
+  line-height: 10px;
+  background-color: #1c1c1cbb;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.yt-subs-card-name {
+  font-weight: 1000;
+  color: #429bf5;
+}
+
+.yt-subs-card-subs {
+  user-select: none;
+}
+
+.yt-subs-card-subs-inner {
+  animation: glow-rainbow linear 13s infinite !important;
 }
