@@ -29,31 +29,31 @@ function loadDOM() {
         gageSubsDOM.innerText = String(Number(gageCount).toLocaleString("en-US"))
         gageCount += 1
       }
-    }, 1000 / gageSubs);
+    }, 14);
     setInterval(() => {
       if (justiceCount <= Number(justiceSubs)) {
         justiceSubsDOM.innerText = String(Number(justiceCount).toLocaleString("en-US"))
         justiceCount += 1
       }
-    }, 1000 / justiceSubs);
+    }, 21);
     setInterval(() => {
       if (renCount <= Number(renSubs)) {
         renSubsDOM.innerText = String(Number(renCount).toLocaleString("en-US"))
         renCount += 1
       }
-    }, 2000 / gageSubs);
+    },  60);
     setInterval(() => {
       if (aidenCount <= Number(aidenSubs)) {
         aidenSubsDOM.innerText = String(Number(aidenCount).toLocaleString("en-US"))
         aidenCount += 1
       }
-    }, 1000 / aidenSubs);
+    }, 13);
     setInterval(() => {
       if (zavierCount <= Number(zavierSubs)) {
         zavierSubsDOM.innerText = String(Number(zavierCount).toLocaleString("en-US"))
         zavierCount += 1
       }
-    }, 300 / zavierSubs);
+    }, 100);
 
     firstTimeLoaded = true
 
@@ -62,7 +62,7 @@ function loadDOM() {
       setTimeout(() => {
         loadDOM()
       }, 2000);
-    }, 30000);
+    }, 15000);
   } else {
     gageSubsDOM.innerText = String(Number(gageSubs).toLocaleString("en-US"))
     justiceSubsDOM.innerText = String(Number(justiceSubs).toLocaleString("en-US"))

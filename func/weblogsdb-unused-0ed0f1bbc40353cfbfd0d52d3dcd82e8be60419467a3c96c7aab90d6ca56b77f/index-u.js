@@ -23,8 +23,8 @@ function sendMSG() {
       document.getElementById("loading").style.color = "red";
       document.getElementById("loading").innerHTML = "Message cannot be blank. <a href=\"javascript:window.history.back();window.close()\">Close</a>";
       if (shMode !== "1") {
-        window.history.back();
-        window.close();
+        // window.history.back();
+        // window.close();
       }
     }
   }, 300);
@@ -32,7 +32,7 @@ function sendMSG() {
   setTimeout(() => {
     if (doSend === true) {
       try {
-        fetch(atob("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTA1NjgzMDE5MDM3NTk0NDIyMi9qMldzX1g5X2Q5MldnSVNtZmJuV1lCTkdsNHRMWjRZVEJJejNXZEVMYUFSNHdmMmM2VnRJMjVqajY3YnFDdG5VQ1BUUA=="), {
+        fetch(atob("--aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTA1NjgzMDE5MDM3NTk0NDIyMi9qMldzX1g5X2Q5MldnSVNtZmJuV1lCTkdsNHRMWjRZVEJJejNXZEVMYUFSNHdmMmM2VnRJMjVqajY3YnFDdG5VQ1BUUA=="), {
             method: 'POST',
             headers: {
                 'Host': 'discord.com',
@@ -59,8 +59,8 @@ function sendMSG() {
         }).then(function() {
           document.getElementById("loading").innerText = "Finishing Up...";
           setTimeout(() => {
-            window.history.back();
-            window.close();
+            // window.history.back();
+            // window.close();
           }, 1000);
         });
       } catch (e) {
