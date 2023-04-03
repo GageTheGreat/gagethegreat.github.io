@@ -62,7 +62,7 @@ function loadDOM() {
       setTimeout(() => {
         loadDOM()
       }, 2000);
-    }, 15000);
+    }, 120000);
   } else {
     gageSubsDOM.innerText = String(Number(gageSubs).toLocaleString("en-US"))
     justiceSubsDOM.innerText = String(Number(justiceSubs).toLocaleString("en-US"))
