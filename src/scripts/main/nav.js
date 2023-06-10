@@ -15,7 +15,7 @@ sidebarBTN.addEventListener("click", (e) => {
 });
 
 parentDocument.addEventListener("mousedown", function(e) {
-  console.log(parentDocument.getElementsByTagName("html")[0].contains(e.target))
+  // console.log(parentDocument.getElementsByTagName("html")[0].contains(e.target))
   if (!sidebar.contains(e.target) && !sidebarBTN.contains(e.target) || parentDocument.getElementsByTagName("html")[0].contains(e.target)) {
     
     sidebar.style.left = "-340px";
@@ -25,7 +25,7 @@ parentDocument.addEventListener("mousedown", function(e) {
 
 
 document.addEventListener("mousedown", function(e) {
-  console.log(parentDocument.getElementsByTagName("html")[0].contains(e.target))
+  // console.log(parentDocument.getElementsByTagName("html")[0].contains(e.target))
   if (!sidebar.contains(e.target) && !sidebarBTN.contains(e.target) || parentDocument.getElementsByTagName("html")[0].contains(e.target)) {
     
     sidebar.style.left = "-340px";
@@ -51,6 +51,8 @@ function checkPage() {
     navPageTitle.textContent = "Function"
   } else if (RegExp("\/games*").test(currentPage)) {
     navPageTitle.textContent = "Games"
+  } else if (RegExp("\/apps*").test(currentPage)) {
+    navPageTitle.textContent = "Apps"
   } else if (RegExp("\/placeholder*").test(currentPage)) {
     navPageTitle.textContent = "Other"
   } else {
