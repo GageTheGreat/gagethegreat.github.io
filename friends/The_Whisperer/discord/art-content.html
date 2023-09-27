@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/friends/justice.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Submit Art</title>
+  </head>
+  <body>
+    <iframe src="/navbar.html" frameborder="0" class="fixed-relatively main-header"></iframe>
+    <iframe src="/sidebar.html" frameborder="0" class="sidebar-iframe-1" id="sidebar-main-1"></iframe>
+    <h1 class="main-page-head1">The Whisperer Art Submissions</h1>
+    <hline></hline>
+    <br>
+    <form action="javascript:void(0)">
+      <input type="text" class="username-art-submit" value="" id="username-box" placeholder="Username" required>
+      <br>
+      <label for="image" class="default-btn default-btn-small">Upload Art</label>
+      <br></br>
+      <input type="file" value="image" class="art-submit-browse" required id="image" accept=".png,.jpeg,.jpg,.webp,">
+      <input type="submit" value="Submit" id="submit-btn" class="default-btn">
+    </form>
+    <script src="/src/scripts/Justice/art-submit-handler.js"></script>
+  </body>
+</html>

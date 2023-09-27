@@ -1,0 +1,62 @@
+html {
+  background: black;
+  color: white;
+  font-size: 40px;
+  font-family: "Paytone One";
+  margin: 0;
+}
+
+* {
+  box-shadow: 0 0 0 2px red;
+}
+
+body {
+  margin: 0 !important;
+}
+
+.home-btn {
+  border: 2px solid white;
+  background: none;
+  padding: 20px 60px;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  transition: 0.2s;
+  margin: 1%;
+  font-size: 40px;
+  font-family: "Paytone One";
+  cursor: pointer;
+  user-select: none;
+}
+
+.home-btn-disabled {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: none;
+  padding: 20px 60px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  transition: 0.2s;
+  margin: 1%;
+  font-size: 40px;
+  font-family: "Paytone One";
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.home-btn:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 500px 2px rgb(255, 255, 255);
+}
+
+.preview-canvas {
+  left: 0;
+  top: 0;
+  width: 50%;
+
+}
+
+section {
+  display: grid;
+}
