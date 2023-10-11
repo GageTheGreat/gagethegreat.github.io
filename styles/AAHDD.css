@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@media (max-width: 488px) {
+  * {
+    font-size: 16px !important;
+  }
+  .coming-soon-badge {
+    font-size: 8px !important;
+  }
+}
+
+@media (max-width: 384px) {
+  * {
+    font-size: 14px !important;
+  }
+  .coming-soon-badge {
+    font-size: 7px !important;
+  }
+}
+
+@media (max-width: 316px) {
+  * {
+    font-size: 11px !important;
+  }
+  .coming-soon-badge {
+    font-size: 6px !important;
+  }
+}
+
+* {
+  font-family: "Wix Madefor Text";
+  text-align: center;
+  font-size: 22px;
+}
+
+a {
+  color: #5da2fd;
+}
+
+h1 {
+  font-size: 34px;
+}
+h2 {
+  font-size: 28px;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  height: 60px;
+  background-color: rgb(26, 26, 26);
+  box-shadow: 0 0 10px 0px black;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+}
+
+
+nav a {
+  margin: 0 2%;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+nav a:hover {
+  background-color: rgb(19, 19, 19);
+}
+
+
+.andrew-id-card {
+  display: inline-block;
+  background-color: rgb(19, 19, 19);
+  max-width: 500px;
+  padding: 5px 50px;
+  border-radius: 10px;
+  margin: 0 5%;
+}
+
+.info-pa {
+  margin: 0 10%;
+}
+
+.image-dft {
+  aspect-ratio: 1164 / 608;
+  width: 70%;
+}
+
+.andrew-images img {
+  border-radius: 20px;
+  width: 30%;
+  margin: 0px 1%;
+  filter:contrast(0) brightness(0.2);
+  image-rendering: crisp-edges;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.andrew-images-visible {
+  filter:contrast(1) brightness(1) !important;
+}
+
+.orange-text {
+  color: rgb(230, 111, 0);
+}
+
+.coming-soon-badge {
+  display: inline-flex;
+  position: relative;
+  top: -4px;
+  background-color: skyblue;
+  border-radius: 2px;
+  padding: 2px;
+  color: black;
+  font-size: 10px;
+}
