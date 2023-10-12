@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/AAHDD.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>AAHPD</title>  
   </head>
   <body>
     <header>
+      <div class="navbar-button-container">
+        <button class="sideview-nav-button material-symbols-rounded" id="sidebar-open-close-btn">Menu</button>
+      </div>
       <nav>
-        <a href="javascript:void(0)">A.N.N.</a>
-        <a href="javascript:void(0)">A.P.F.</a>
-        <a href="javascript:void(0)" class="orange-text">Halloween <span class="coming-soon-badge">COMING SOON</span></a>
+        <a href="./">Home</a>
+        <a href="ANN.html">A.N.N.</a>
+        <a href="APF.html">A.P.F.</a>
+        <a href="Halloween.html" class="orange-text">Halloween <span class="coming-soon-badge">COMING SOON</span></a>
       </nav>
     </header>
+    <section class="sidebar" id="sidebar">
+      <div>
+        <a href="./" class="sidebar-button">Home</a>
+        <a href="ANN.html" class="sidebar-button">A.N.N.</a>
+        <a href="APF.html" class="sidebar-button">A.P.F.</a>
+        <a href="Halloween.html" class="sidebar-button">Halloween</a>
+      </div>
+    </section>
     <main>
       <section>
-        <p class="beta-warning">BETA</p>
+        <!-- <p class="warning-banner">BETA</p> -->
         <h1>Adyn Andrew Howerton Defense Department (AAHDD)</h1>
         <div>
           <h2>Adyn Info</h2>
@@ -27,7 +40,8 @@
               <p>Hair: Blonde</p>
               <p>Race: Whiter than discord light mode</p>
               <p>Eyes: Blue</p>
-              <p>Height: est. 4'9 - 5'</p>
+              <p>Height: est. 4'7-4'10
+              </p>
             </div>
             <div class="info-pa">
               <br>
@@ -43,6 +57,7 @@
         </div>
       </section>
     </main>
-    <script src="/src/scripts/main/AAHDD.js"></script>
+    <script src="/src/scripts/AAHDD/AndrewPics.js"></script>
+    <script src="/src/scripts/AAHDD/Sidebar.js"></script>
   </body>
 </html>

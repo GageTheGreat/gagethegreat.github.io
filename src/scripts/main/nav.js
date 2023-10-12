@@ -50,7 +50,7 @@ function checkPage() {
   } else if (RegExp("\/func*").test(currentPage)) {
     navPageTitle.textContent = "Function"
   } else if (RegExp("\/games*").test(currentPage)) {
-    navPageTitle.textContent = "Games"
+    navPageTitle.textContent = "Profiles"
   } else if (RegExp("\/apps*").test(currentPage)) {
     navPageTitle.textContent = "Apps"
   } else if (RegExp("\/placeholder*").test(currentPage)) {
