@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+
+@media (max-width: 755px) {
+  .navbar-button-container {
+    display: unset !important;
+  }
+  nav a {
+    display: none;
+  }
+}
+
 @media (max-width: 575px) {
   * {
     font-size: 16px !important;
@@ -7,11 +17,8 @@
   .coming-soon-badge {
     font-size: 8px !important;
   }
-  .navbar-button-container {
-    display: unset !important;
-  }
-  nav a {
-    display: none;
+  .andrew-images img {
+    border-radius: 5px !important;
   }
 }
 
@@ -66,7 +73,7 @@ header {
   box-shadow: 0 0 10px 0px black;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: 1000;
 }
 
 nav {
@@ -75,7 +82,7 @@ nav {
 
 
 nav a {
-  margin: 0 2%;
+  margin: 0 1%;
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
@@ -128,7 +135,7 @@ nav a:hover {
 }
 
 .andrew-images img {
-  border-radius: 20px;
+  border-radius: 4%;
   width: 30%;
   margin: 0px 1%;
   filter:contrast(0) brightness(0.2);
@@ -179,7 +186,7 @@ nav a:hover {
   background-color: #2b2b2b;
   left: -315px;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   width: 300px;
   margin: 0px;
   height: calc(100% - 55px);
@@ -246,4 +253,64 @@ nav a:hover {
 
 .navbar-button-container {
   display: none;
+}
+
+.andrew-images2 img {
+  display: inline-flex;
+  border-radius: 4%;
+  margin: 1%;
+  filter: contrast(0) brightness(0.2);
+  image-rendering: crisp-edges;
+  cursor: pointer;
+  width: 100%;
+  min-width: 250px;
+  max-width: 363.6px;
+  transition: 0.15s;
+}
+
+.andrew-images2 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.andrew-images2 span {
+  opacity: 1;
+  position: absolute;
+  user-select: none;
+  background-color: #101010;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 80%;
+  transition: 0.15s;
+}
+
+.andrew-i-2-click-detector {
+  position: absolute;
+  aspect-ratio: auto 1 / 1;
+  max-width: 363.6px;
+  max-height: 363.6px;
+  width: 100%;
+  border-radius: 4%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.andrew-pics-a-visible {
+  filter: contrast(1) brightness(1) !important;
+}
+
+.andrew-pics-btn-invisble {
+  opacity: 0 !important;
+}
+
+.preload-andrew-pics {
+  display: none;
+}
+
+.danger-sign-a {
+  background-color: rgb(255, 76, 76) !important;
+  color: black;
 }
