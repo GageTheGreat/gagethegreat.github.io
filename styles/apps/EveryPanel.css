@@ -1,0 +1,47 @@
+body {
+  background-color: #0b0b1e;
+  margin: 0;
+}
+
+button {
+  font-size:40px;
+  padding: 10px 0;
+  width: 320px;
+  margin: 0px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgb(32, 25, 95);
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: rgb(57, 47, 150);;
+}
+
+button:active {
+  transition: 0.05s;
+  box-shadow: 0 0 5px 10px rgb(102, 88, 233);
+  background: rgb(57, 47, 150);
+}
+
+.main-div {
+  position: absolute;
+  height: calc(100% - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bottom {
+  position: absolute;
+  top: calc(100% - 41px);
+  width: 100%;
+}
+
+.bottom audio {
+  position: absolute;
+  width: 100%;
+}
