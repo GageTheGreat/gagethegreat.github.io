@@ -52,10 +52,6 @@ function getFile(_token) {
       download("/file/images/purple_pfp.png")
       break;
 
-    case "giveaway-najdrpdn":
-      redirect("/apps/Giveaway/?participants=[%22Gage%22,%22Ren%22,%22Ibrahim%22,%22Max%22,%22Olivia%22,%22Keaton%22,%22Sam%22,%22Amy%22,%22Halil%22,%22Kohl%22,%22Seaenna%22%5D")
-      break;
-
     case "osu-reddstone35-skin":
       download("/file/osu!/Reddstone35's Default V2 (Whitecat + Eliminate336).osk")
       break;

@@ -40,7 +40,7 @@ function checkPage() {
   } else if (RegExp("\/discord*").test(currentPage)) {
     navPageTitle.textContent = "Discord"
   } else if (RegExp("\/store*").test(currentPage)) {
-    navPageTitle.textContent = "Store"
+    navPageTitle.textContent = "Apps"
   } else if (RegExp("\/socials*").test(currentPage)) {
     navPageTitle.textContent = "Socials"
   } else if (RegExp("\/docs*").test(currentPage)) {
