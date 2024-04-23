@@ -8,4 +8,8 @@ console.log(barInner)
 
 barInner.style.width = `${progress}%`
 
-percentageView.textContent = `${progress}% Complete`
+if (progress >= 100) {
+  percentageView.textContent = `${progress}% COMPLETE!`
+} else {
+  percentageView.textContent = `${progress}% Complete`
+}

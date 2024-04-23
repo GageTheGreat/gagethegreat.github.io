@@ -50,20 +50,22 @@ h2 {
   width: 80vw;
   /* height: 50px; */
   display: block;
-  border-radius: 15px;
+  border-radius: 1vh;
   background-color: rgba(37, 34, 34, 0.5);
-  border: 1px solid rgb(69, 255, 110);
+  /* border: 2px solid rgb(69, 255, 110); */
+  box-shadow: 0 0 0 2px rgb(69, 255, 110),
+  0 0 0 5px rgb(56, 56, 56);
   /* background-image: url("/src/img/LineEffect1.png"); */
   background-size: 55px;
 }
 
 .loader-inner {
-  aspect-ratio: 1300 / 70;
+  /* aspect-ratio: 1300 / 70; */
   background: linear-gradient(90deg,rgb(0, 255, 64), rgb(99, 250, 99));
   box-shadow: 0px 0px 250px 0px rgb(0, 255, 64);
-  /* height: 50px; */
+  height: 50px;
   width: 0%;
-  border-radius: 15px;
+  border-radius: 1vh;
   resize: horizontal;
   animation: innerBarAnim 4s infinite forwards ease-in-out;
   /* background-image: url("/src/img/LineEffect1.png"); */
