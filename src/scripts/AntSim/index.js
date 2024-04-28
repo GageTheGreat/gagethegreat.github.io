@@ -1,4 +1,4 @@
-const progress = 43.7
+const progress = 52
 
 const barInner = document.querySelector("#bar-inner")
 const barOuter = document.querySelector("#bar-outer")
