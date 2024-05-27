@@ -1,15 +1,15 @@
-const progress = 52
+const progress = 60;
 
-const barInner = document.querySelector("#bar-inner")
-const barOuter = document.querySelector("#bar-outer")
-const percentageView = document.querySelector("#percentage-done")
+const barInner = document.querySelector('#bar-inner');
+const barOuter = document.querySelector('#bar-outer');
+const percentageView = document.querySelector('#percentage-done');
 
-console.log(barInner)
+console.log(barInner);
 
-barInner.style.width = `${progress}%`
+barInner.style.width = `${progress}%`;
 
 if (progress >= 100) {
-  percentageView.textContent = `${progress}% COMPLETE!`
+  percentageView.textContent = `${progress}% COMPLETE!`;
 } else {
-  percentageView.textContent = `${progress}% Complete`
+  percentageView.textContent = `${progress}% Complete`;
 }
