@@ -49,7 +49,7 @@ h2 {
   aspect-ratio: 1300 / 30;
   width: 80vw;
   /* height: 50px; */
-  display: block;
+  display: inline-block;
   border-radius: 1vh;
   background-color: rgba(37, 34, 34, 0.5);
   /* border: 2px solid rgb(69, 255, 110); */
@@ -70,4 +70,22 @@ h2 {
   animation: innerBarAnim 4s infinite forwards ease-in-out;
   /* background-image: url("/src/img/LineEffect1.png"); */
   /* background-size: 20px; */
+}
+
+.ant-sim-play-now-btn-image {
+  width: 40%;
+  display: inline-block;
+  transition: 0.2s;
+  border-radius: 1.1vw;
+  background: none !important;
+}
+
+.ant-sim-play-now-btn-image:hover {
+  width: 45%; 
+  box-shadow: 0px 0px 250px 0px rgb(0, 255, 64);
+}
+
+.ant-sim-play-now-btn {
+  display: none;
+  background: none !important;
 }
