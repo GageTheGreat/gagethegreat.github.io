@@ -6,6 +6,8 @@ var attemptsContainer = document.getElementById("attempts-counter")
 var bestNumColor
 var number
 
+var soundspath = "/src/sound/LowestNumber/"
+
 if (localStorage.getItem("BestNum") === null) {
   localStorage.setItem("BestNum", 100)
 }
@@ -14,7 +16,12 @@ if (localStorage.getItem("LNAttempts") === null) {
   localStorage.setItem("LNAttempts", 0)
 }
 
-attemptsContainer.textContent = "Attempts: " + localStorage.getItem("LNAttempts")
+attemptsContainer.textContent = "Attempts: " + Number(localStorage.getItem("LNAttempts")).toLocaleString("en-US")
+
+function playSound(sound) {
+  var audio = new Audio(soundspath + sound);
+  audio.play();
+}
 
 function updateBestNumColor() {
   if (localStorage.getItem("BestNum") < 0.1 && localStorage.getItem("BestNum") > 0.01) {
@@ -54,19 +61,29 @@ generateBtn.addEventListener("click", () => {
   historyItem.textContent = number
   if (number < 0.1 && number > 0.01) {
     historyItem.style.color = "#05fc32"
+    playSound("Level1.mp3")
   } else if (number < 0.01 && number > 0.001) {
     historyItem.style.color = "#05fc80"
+    playSound("Level2.mp3")
   } else if (number < 0.001 && number > 0.0001) {
     historyItem.style.color = "#05fcd7"
+    playSound("Level3.ogg")
   } else if (number < 0.0001 && number > 0.00001) {
     historyItem.style.color = "#ae05fc"
+    playSound("Level4.mp3")
   } else if (number < 0.00001 && number > 0.000001) {
     historyItem.style.color = "#fc05e7"
+    playSound("Level5.mp3")
   } else if (number < 0.000001 && number > 0.0000001) {
     historyItem.style.color = "#fc0553"
+    playSound("Level5.mp3")
   } else if (number < 0.0000001) {
     historyItem.style.color = "#ff0000"
+    playSound("Level5.mp3")
   } 
+
+  playSound("PopSound.ogg")
+
   if (number < localStorage.getItem("BestNum")) {
     localStorage.setItem("BestNum", number)
     console.log(number + " NEW BEST")
@@ -79,6 +96,6 @@ generateBtn.addEventListener("click", () => {
     historyInner.appendChild(historyItem)
   }
   localStorage.setItem("LNAttempts", Number(localStorage.getItem("LNAttempts")) + 1)
-  attemptsContainer.textContent = "Attempts: " + localStorage.getItem("LNAttempts")
+  attemptsContainer.textContent = "Attempts: " + Number(localStorage.getItem("LNAttempts")).toLocaleString("en-US")
   historyContainer.scrollTop = historyContainer.scrollHeight
 });
