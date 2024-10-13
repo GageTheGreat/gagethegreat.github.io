@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+* {
+  font-family: Lemon;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(180deg, #000000, #0D0018, #290027);
+  height: calc(100vh) ;
+  margin: 0;
+}
+
+.stat-text {
+  font-size: 7rem;
+  line-height: 100%;
+  user-select: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.visits {
+  color: #ABA5FF;
+}
+
+.active {
+  color: #FFF4B9;
+}
+
+.favs {
+  color: #FF8FB8;
+}
+
+.visits-num {
+  background: linear-gradient(86deg, #E892FA, #8BE0FF);
+  background-clip: text;
+  color: #00000000;
+  /* -webkit-text-stroke: 4px #170C29; */
+  filter: drop-shadow(4px 4px #170C29) drop-shadow(-4px 4px #170C29) drop-shadow(-4px -4px #170C29) drop-shadow(4px -4px #170C29)
+  drop-shadow(5px 5px #B980FF66)
+}
+
+.active-num {
+  background: linear-gradient(86deg, #FADE92, #D6FF8B);
+  background-clip: text;
+  color: #00000000;
+  /* -webkit-text-stroke: 4px #170C29; */
+  filter: drop-shadow(4px 4px #181306) drop-shadow(-4px 4px #181306) drop-shadow(-4px -4px #181306) drop-shadow(4px -4px #181306)
+  drop-shadow(5px 5px #FFFF7356)
+}
+
+.favs-num {
+  background: linear-gradient(86deg, #FF4891, #FF2F32);
+  background-clip: text;
+  color: #00000000;
+  /* -webkit-text-stroke: 4px #170C29; */
+  filter: drop-shadow(4px 4px #230A14) drop-shadow(-4px 4px #230A14) drop-shadow(-4px -4px #230A14) drop-shadow(4px -4px #230A14)
+  drop-shadow(5px 5px #FF739656)
+}
