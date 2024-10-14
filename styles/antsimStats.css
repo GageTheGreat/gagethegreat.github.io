@@ -7,12 +7,12 @@
 body {
   text-align: center;
   background: linear-gradient(180deg, #000000, #0D0018, #290027);
-  height: calc(100vh) ;
+  background-attachment: fixed;
   margin: 0;
 }
 
 .stat-text {
-  font-size: 7rem;
+  font-size: calc(5vh + 3vw);
   line-height: 100%;
   /* user-select: none; */
   position: absolute;
@@ -58,4 +58,20 @@ body {
   /* -webkit-text-stroke: 4px #170C29; */
   filter: drop-shadow(4px 4px #230A14) drop-shadow(-4px 4px #230A14) drop-shadow(-4px -4px #230A14) drop-shadow(4px -4px #230A14)
   drop-shadow(5px 5px #FF739656)
+}
+
+.antsim-link {
+  font-size: 1.2rem;
+  color: white;
+  /* position: absolute; */
+  bottom: 0;
+  vertical-align: bottom;
+  margin-top: 100px;
+  transition-duration: 0.2s;
+}
+
+.antsim-link:hover {
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 100px rgb(202, 138, 255), 0 0 10px rgb(202, 138, 255), 0 0 2px rgb(226, 191, 255);
 }
